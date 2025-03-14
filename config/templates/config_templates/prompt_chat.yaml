@@ -1,0 +1,15 @@
+run:
+    mode: chatgpt
+save: 
+    en: True
+    pub: 
+        prefix: pychecker_stage4
+        subdir: design_stages
+load:
+    prompt:
+        path: config/initial_prompts/prompt1.txt
+gpt: 
+    model: 4
+    chatgpt:
+        start_form: "prompt"
+        one_time_talk: True

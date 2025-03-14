@@ -1,0 +1,56 @@
+[line 1308] of AutoBenchResults:
+运行corrector一直无法修复问题
+原错误scenario index：only scenario 10
+运行内容：
+    ···
+    Passed; vector: {'check_en': True, 'scenario': '8', 'clk': 1, 'reset': 0, 'w': 1, 'z': 0}
+    Passed; vector: {'check_en': True, 'scenario': '9', 'clk': 1, 'reset': 0, 'w': 0, 'z': 0}
+    Passed; vector: {'check_en': True, 'scenario': '10', 'clk': 1, 'reset': 0, 'w': 1, 'z': 0}
+    Scenario: 10, expected: z=0, observed z=1
+    Failed; vector: {'check_en': True, 'scenario': '10', 'clk': 1, 'reset': 0, 'w': 1, 'z': 1}
+    Passed; vector: {'check_en': True, 'scenario': '10', 'clk': 1, 'reset': 0, 'w': 1, 'z': 1}
+    Passed; vector: {'check_en': True, 'scenario': '11', 'clk': 1, 'reset': 0, 'w': 0, 'z': 0}
+    ···
+错误原因：verilog的时序问题
+问题点：
+    // Scenario 10
+    scenario = 10;
+    w = 1; // Loop in state E
+    $fdisplay(file, "scenario: %d, clk = %d, reset = %d, w = %d, z = %d", scenario, clk, reset, w, z);
+    repeat(3) begin
+        #10;
+        $fdisplay(file, "[check]scenario: %d, clk = %d, reset = %d, w = %d, z = %d", scenario, clk, reset, w, z); #10; 
+    end
+这个repeat里，会出现连续两个delay的问题
+这个问题目前有两种思路，第一，在生成阶段，code standardization上修复这个时序问题；第二，在corrector阶段，加入对于verilog driver可能出现时序问题的处理方案
+解决方案：目前倾向前期解决，再观察观察此问题是否多次出现；
+在corrector处解决的思路：优先判定是否为python问题，如果不是，则判定为verilog时序问题，调用standardization。
+此类问题的scenario pattern为
+1 1 1 ... 1 0 1 1 ...
+1 1 1 ... 1 0 1 1 ...
+1 1 1 ... 1 0 1 1 ...
+1 1 1 ... 1 0 1 1 ...
+1 1 1 ... 1 0 1 1 ...
+非常整齐，置信度很高，之后corrector可以考虑对此类高置信度情况分别处理
+
+
+
+[line 1365][saves_inEDA/0805~0811/corrector/correct_test_80wrong_discrim_20240809_225259/1365]
+第一个问题是correct python时，把class直接删掉变成func了。需要在corrector处加上一些生成python时用到的格式要求，见stage 5
+还是时序问题，同一个repeat里，一个check的前后都有一个#10，其实是个老问题
+标准时序：
+    // Scenario 6
+    scenario = 6;
+    a = 0; $fdisplay(file, "scenario: %d, clk = %d, a = %d, q = %d", scenario, clk, a, q);
+    #10;
+    repeat(2) begin
+        $fdisplay(file, "[check]scenario: %d, clk = %d, a = %d, q = %d", scenario, clk, a, q);#10;
+    end
+另一个问题：本该写在loader里面的内容（更新内部状态），写在了checker里面，导致并不是每次load都会更新内部状态，时序出现错误。
+并非逻辑错误，而是时序错误
+参考改错调试：ipynb_demo/error_analysis/correct_test_80wrong_discrim_20240809_225259
+
+
+进一步增强corrector：
+如果大量rtl的pattern都呈现相同，则增强对rtl的信心，挑选一个rtl的error info作为额外的信息给corrector
+例如，80%的rtl pattern都是 0000100，则挑选符合条件的第一个rtl的information。

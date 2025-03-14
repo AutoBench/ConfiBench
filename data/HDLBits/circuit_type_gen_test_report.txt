@@ -1,0 +1,172 @@
+[mux2to1v] consistent
+[m2014_q6b] consistent
+[ringer] consistent
+[alwaysblock1] consistent
+[zero] consistent
+[circuit7] consistent
+[ece241_2014_q5a] consistent
+[fsm3] consistent
+[vector2] consistent
+[m2014_q4c] consistent
+[mt2015_q4a] consistent
+[shift18] consistent
+[ece241_2013_q8] consistent
+[m2014_q6] consistent
+[fsm_ps2data] consistent
+[2012_q2b] consistent
+[vector0] consistent
+[kmap4] consistent
+[vector1] consistent
+[norgate] consistent
+[alwaysblock2] consistent
+[m2014_q6c] consistent
+[mux256to1] consistent
+[2014_q4a] consistent
+[ece241_2014_q4] consistent
+[circuit4] consistent
+[rule110] consistent
+[fsm3s] consistent
+[circuit5] consistent
+[bugs_mux2] consistent
+[mt2015_muxdff] consistent
+[edgecapture] consistent
+[dff8] consistent
+[ece241_2014_q1c] consistent
+[review2015_fsmonehot] consistent
+[counter_2bc] consistent
+[always_casez] consistent
+[always_nolatches] consistent
+[m2014_q4j] consistent
+[history_shift] consistent
+[wire_decl] consistent
+[dff] consistent
+[ece241_2013_q12] consistent
+[thermostat] consistent
+[ece241_2013_q2] consistent
+[lfsr32] consistent
+[circuit3] consistent
+[7420] consistent
+[popcount255] consistent
+[gatesv] consistent
+[circuit6] consistent
+[countslow] consistent
+[m2014_q4f] consistent
+[m2014_q4h] consistent
+[fsm1] consistent
+[dualedge] consistent
+[xnorgate] consistent
+[mt2015_q4] consistent
+[rotate100] consistent
+[review2015_count1k] consistent
+[notgate] consistent
+[fsm_onehot] consistent
+[ece241_2013_q7] consistent
+[popcount3] consistent
+[vector5] consistent
+[lemmings1] consistent
+[circuit1] consistent
+[7458] consistent
+[2014_q3c] consistent
+[m2014_q4e] consistent
+[wire4] consistent
+[m2014_q4b] consistent
+[always_case] consistent
+[timer] consistent
+[review2015_fsmseq] consistent
+[dff8r] consistent
+[edgedetect2] consistent
+[count1to10] consistent
+[circuit9] consistent
+[lfsr5] consistent
+[bugs_addsubz] consistent
+[m2014_q3] consistent
+[bugs_case] consistent
+[vectorr] consistent
+[kmap3] consistent
+[review2015_shiftcount] consistent
+[wire] consistent
+[review2015_fsmshift] consistent
+[count15] consistent
+[always_if] consistent
+[kmap1] consistent
+[2013_q2afsm] consistent
+[count10] consistent
+[fsm_ps2] consistent
+[mux2to1] consistent
+[gates4] consistent
+[2014_q3bfsm] consistent
+[2013_q2bfsm] consistent
+[dff8p] consistent
+[reduction] consistent
+[fsm3comb] consistent
+[mt2015_q4b] consistent
+[2012_q2fsm] consistent
+[dff16e] consistent
+[edgedetect] consistent
+[circuit8] consistent
+[rule90] consistent
+[mt2015_eq2] consistent
+[gatesv100] consistent
+[m2014_q4a] should be CMB, but got SEQ; code:
+module top_module (
+    input d,
+    input ena,
+    output logic q
+);
+
+always_ff @(d, ena)
+begin
+    if (ena)
+        q <= d;
+end
+
+endmodule
+
+[mux256to1v] consistent
+[mux9to1v] consistent
+[vectorgates] consistent
+[fsm3onehot] consistent
+[conditional] consistent
+[gates] consistent
+[kmap2] consistent
+[2014_q3fsm] consistent
+[vector4] consistent
+[m2014_q4k] consistent
+[always_case2] consistent
+[fsm2] consistent
+[m2014_q4i] consistent
+[step_one] consistent
+[vector100r] consistent
+[m2014_q4d] consistent
+[shift4] consistent
+[truthtable1] consistent
+[dff8ar] consistent
+[gates100] consistent
+[hadd] consistent
+[always_if2] consistent
+[fsm2s] consistent
+[vector3] consistent
+[circuit2] consistent
+[andgate] consistent
+[fsm1s] consistent
+[fadd] consistent
+[m2014_q4g] consistent
+[ece241_2014_q3] consistent
+[ece241_2014_q5b] consistent
+[circuit10] consistent
+[2012_q1g] consistent
+[fsm_hdlc] consistent
+[review2015_fancytimer] consistent
+[ece241_2013_q4] consistent
+[fsm_serial] consistent
+[fsm_serialdata] consistent
+[gshare] consistent
+[lemmings4] consistent
+[review2015_fsm] consistent
+[conwaylife] consistent
+[lemmings3] consistent
+[count_clock] consistent
+[lemmings2] consistent
+[countbcd] consistent
+unmatched: 1
+total tokens: 67744

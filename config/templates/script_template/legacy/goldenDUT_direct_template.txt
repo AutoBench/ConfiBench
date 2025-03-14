@@ -1,0 +1,24 @@
+stage 1:
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is 
+- 1.1. the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". 
+- 1.2. the module header.
+- 1.3. the golden RTL codes in verilog. In testbench you should compare the signals from golden RTL and DUT. If not the same, then this DUT fails in the test.
+Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements from the problem description.
+2. you are in section 4. in this section, you will be provided with test scenarios and golden DUT. please highly based on these information to generate the testbench.
+3. In the scenarios testing part, do not directly write the value of expected value, but generate expected value from golden RTL.
+4. your information is:
+
+your testbench template is:
+[testbench template]
+
+[problem description from HDLBits]
+[module header]
+
+IMPORTANT - golden RTL: (please instantiate it in your testbench. Your code should not contain the full code of golden RTL)
+[module code]
+
+very very IMPORTANT: If all the test cases pass, the testbench should display "all test cases passed". If any one of the test cases fails, testbench should not display "all test caess passed". 
+please don't reply other words except the testbench codes.
+
+[$$TB_code module_code$$]

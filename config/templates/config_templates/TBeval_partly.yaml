@@ -1,0 +1,19 @@
+# v2.1pre 20240220
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: eval-EXP01_mini10
+        subdir: eval
+gpt: 
+    model: 4old
+autoline: 
+    probnum: probset
+    probset: data/HDLBits/HDLBits_data_miniset_subset10.jsonl
+    mutantset: data/HDLBits/HDLBits_data_miniset_mutants.jsonl
+    maxdebug: 5
+    runpartly:
+        en: True
+        part: TB_eval
+        dir: EXP_Analyze/mini10_EXP01_1213

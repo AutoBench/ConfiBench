@@ -1,0 +1,34 @@
+stage 1:
+
+The following words in "{}" is from a verilog test problem. Now we plan to write a verilog testbench for the module descriped in {}. Firstly, please summarize the module and give me a description of the testbench writing task so I can use it to design my testbench.
+Your description should include "specification", "head module", "input/output ports" and other useful information.
+Please attach "example" of the testcase if it is mentioned below:
+
+[problem description from HDLBits]
+[module header]
+
+
+////////////////////////////////
+stage 2:
+
+1. can you give a table including test cases to test a digital hardware module according to the specification below? 
+2. please attach a rule of these test cases. the rule can be written in python code. the python codes should use the input/output ports in specifications as parameters.
+
+[response from stage 1]
+
+
+///////////////////////////////
+stage 4:
+
+According to the information below, 
+1. please generate a verilog testbench code to test the verilog module in specification. Your code should include all of the testcases. 
+2. very important: Your testbench testcases should strongly rely on the python code from stage 2!!!
+3. very important: If all the test cases pass, the testbench should display "all test cases passed". If any one of the test cases fails, testbench should not display "all test caess passed". 
+4. There should be clear enough messages indicate the reason and details when test does not pass.
+5. attention! Your reply should only contain the testbench code. reply template:
+
+[testbench template]
+
+below is the information:
+[response from stage 1]
+[response from stage 2]

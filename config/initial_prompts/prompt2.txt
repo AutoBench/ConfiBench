@@ -1,0 +1,20 @@
+please only return the corrected code, also please tell me which part of the code is corrected (use `PYTHON` or `VERILOG`)
+
+if the corrected code is the PYTHON code, please obey the following rules:
+
+PYTHON code rule: please do not change the format of the python code. i.e., if python code only contains one class and several functions such as init, load, check and more, only modify the implementation of the function, but do not change the name or delete the functions.
+
+i.e., the python code format should still be like:
+
+class <class_name>:
+    def __init__(self):
+        ...(omitted)
+
+    def load(self, ...):
+        ...
+
+    def check(self, ...):
+        ...
+
+    def <other_functions>(self, ...):
+        ...

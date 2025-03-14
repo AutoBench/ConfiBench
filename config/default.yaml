@@ -1,0 +1,117 @@
+# /////***** ATTENTION: DO NOT MODIFY THIS FILE!!!!!!! *****\\\\\
+# /////***** ATTENTION: DO NOT MODIFY THIS FILE!!!!!!! *****\\\\\
+# /////***** ATTENTION: DO NOT MODIFY THIS FILE!!!!!!! *****\\\\\
+
+################# running #################
+run:
+    version: '1.0.0' # last stable version of the code
+    author: 'Ruidi Qiu - Technical University of Munich'
+    time: ~ # preserved, will be set in program
+    custom_path: ~ #preserved, will be set in program
+    mode: 'chatgpt' # 'chatgpt': like a chatgpt but can load prompt or previous messages. 'autoline': run pipeline of Chatbench automatically. 'iverilog': run iverilog. 'test': test mode.
+
+################# saving ##################
+save:
+    en: True # True -> save according to settings below; False -> do not save anything.
+    root: ~ # the root saving dir ends with '/'; will be set in program. 
+    pub:
+        prefix: # the real name of one experiment, fill it in custom_path;
+        dir: 'saves/$weekrange$/' # Ended with '/'; if not empty, log/tb/data will share one dir, recommended.
+        subdir: '' # the final dir of one experiment would be dir + subdir;
+
+    log:
+        en: True
+        dir: 'logs/'
+        notes: ~
+        cfg_pmode: iwantall # available: ['split', 'merge', 'iwantall'] # config print mode; see loader_saver.py;
+        debug_en: False
+        level: "TRACE"
+
+    message:
+        en: True
+        dir: 'messages/'
+        format: 'json' # 'json' or 'txt'
+
+    iverilog:
+        en: True
+        subdir: 'ivcode_nodebug' # for pub mode
+
+################# loading #################
+load:
+    prompt: 
+        path: "config/initial_prompts/prompt1.txt" # Only valid when gpt.start_form = "prompt"; path to the prompt file
+        pick_idx: [] # TODO: valid only when path is ended with '.json', else ignored 
+        
+    stage_template:
+        path: "config/templates/stage_template0301.txt"
+
+############### GPT related ###############
+gpt:
+    model: "4o" # model name. Now we only use "gpt-4-1106-preview" or "gpt-3.5-turbo-1106" (20231128). "3.5" or "4" will be redirected to the above two models. see https://platform.openai.com/docs/models.
+    key_path: "config/key_API.json" # path to the key file
+    temperature: ~ # currently only in mode "chatgpt". not valid in mode "autoline" because it is too complicated. For chatgpt, it is default to 1.0. see https://platform.openai.com/docs/api-reference/chat/create.
+    json_mode: False # if True, the output of GPT will be in json format. Don't forget to ask GPT to return the json format. 
+    chatgpt: # settings below are valid only at mode "chatgpt";
+        start_form: "chat" #  "chat": input messages by hand; "prompt": input messages from file; only valid for the first message. In the future there will be a new start_form "competion".
+        # follow_form: "chat" # 
+        one_time_talk: False # will not continue to talk after the first message.
+    rtlgen_model: ~ # model used in autoline-3-TBcheck-discriminator, if None, use the same model as gpt.model.
+
+################# iverilog ################
+iverilog:
+    dir: "" # valid at mode "iverilog"; path to the dir of the iverilog files
+    task_id: "" # valid at mode "iverilog"; the task id of the iverilog task
+
+################# autoline ################
+autoline:
+    multithread: 
+        en: False
+        num: 10 # the number of max threads used in the multithread mode
+    probset: # integret probset/mutantset/prob_except; 20240304
+        path: ~ # default:"data/HDLBits/HDLBits_data.jsonl", you must enter this path in custom.yaml to avoid unconscious use. 
+        mutant_path: ~ # used in TB_eval2; you must enter this path in custom.yaml to avoid unconscious use.
+        gptgenRTL_path: ~ # used in TB_eval2b; you must enter this path in custom.yaml to avoid unconscious use.
+        more_info_paths: [] # more info added to the probset; 
+        only: [] # only import data in the list by task_id;
+        exclude: [] # excludes data in the list by task_id;
+        exclude_json: ~ # excludes data in the json file by task_id;
+        filter: [{}] # only imports data containing key-value pairs; example: {"circuit_type": "CMB"} means only import data with "circuit_type" = "CMB"; x
+    checklist:
+        max: 3
+    debug:
+        max: 5 # max iterations of debug; if 0, no debug.
+        reboot: 1 # rerun stage 4 after every x iterations of debug. if 0, not debug but only reboot
+        py_rollback: 2 # reboot both after every x iterations of py_debug; if 0, no py debug; if 1, only debug 1 time and then reboot;
+    onlyrun: ~ # valid: [~, "TBgen", "TBgensim", "TBgensimeval"] ; if none, run all tasks; if not none, run only the tasks in the list.
+    promptscript: ~
+    timeout: 60 # timeout for run a python or iverilog code; unit: second.
+    TBcheck:
+        rtl_num: 20 # the number of rtls used in the TB_check; will be ignored if the llmgen_rtls are provided in probset.
+        correct_max: 3
+        discrim_mode: "col_full_wrong"
+        correct_mode: "naive"
+        rtl_compens_en: True # if True, when the half of the rtls contain syntax error, will generate more rtls to compensate.
+        rtl_compens_max_iter: 3 # the max iteration of generating rtls to compensate.
+    itermax: 10 # the max reboot times of the whole program; this reboot is trigered by TBcheck's next action
+    update_desc: False # if True, when reboot the program, will use the updated description of the task (from TBcheck)
+    save_compile: True # if True, save the compiling codes and files (codes in TBeval and TBcheck.discriminator); if False, not save.
+    save_finalcodes: True # if True, save the eventually generated Testbench codes (Verilog + Python); if False, not save.
+    error_interruption: False # if True, the program will stop when error occurs; Usually used in debugging.
+    save_data: True # will save all the data, including the prob_data, run_info, codes and RSmatrix into a json file
+
+confibench:
+    en: False
+    save_fig: True # if True, save the figure of comparison between confidence and boolean confidence.
+    confidence:
+        strategy: ~ # mode: []
+    conf_bool:
+        strategy: ~ # mode: ["e_rank" (default), "e_rank_super", "conf_only"], strategy for how to calculate the boolean confidence from confidence and scenario rank score.
+        e_rank_super:
+            threshold: 0.2 # threshold below which or above 1 minus which the boolean confidence is directly set to 0 or 1. 
+            K: 8 # the stronger, the classification curve is more steep. if you want a linear like curve, choose a very small K such as 0.001
+        conf_only:
+            threshold: 0.7
+    multibench: # multibench mode, will use multiple testbench to evaluate the DUT, the scenario mask will be applied in this mode
+        en: False
+        min_tb: 2 # the minimum number of testbench used in the multibench mode
+        min_ratio: 0.8 # the min ratio of the valid scenarios in the final testbench ensemble. defination: ratio = valid_scenarios / average scenarios num in all testbenches

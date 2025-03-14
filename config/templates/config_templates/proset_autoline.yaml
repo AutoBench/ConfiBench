@@ -1,0 +1,17 @@
+# time: 2024/02/22 14:27:00 v2.1pre
+run:
+    mode: autoline
+
+save:
+    en: True
+    pub:
+        prefix: "4stagedemo_minisub10"
+
+gpt:
+    model: "4"
+
+autoline:
+    probnum: probset #probset
+    probset: "data/HDLBits/HDLBits_data_miniset_subset10.jsonl"
+    mutantset: data/HDLBits/HDLBits_data_miniset_mutants.jsonl
+    maxdebug: 5

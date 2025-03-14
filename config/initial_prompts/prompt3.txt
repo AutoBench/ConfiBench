@@ -1,0 +1,77 @@
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). This circuit is a sequential circuit. The infomation we have is 
+- 1.1. the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". 
+- 1.2. the module header.
+- 1.3. test scenarios which determines value and sequential information of test vectors
+- 1.4. the testbench structure
+- 1.5. the instruction of writing our testbench
+
+module top_module(
+	input clk,
+	input load,
+	input [255:0] data,
+	output reg [255:0] q);
+
+Your other information:
+RTL circuit problem description:
+The "game" is played on a two-dimensional grid of cells, where each cell is either 1 (alive) or 0 (dead). At each time step, each cell changes state depending on how many neighbours it has:
+// (1) 0-1 neighbour: Cell becomes 0.
+// (2) 2 neighbours: Cell state does not change.
+// (3) 3 neighbours: Cell becomes 1.
+// (4) 4+ neighbours: Cell becomes 0.
+// The game is formulated for an infinite grid. In this circuit, we will use a 16x16 grid. To make things more interesting, we will use a 16x16 toroid, where the sides wrap around to the other side of the grid. For example, the corner cell (0,0) has 8 neighbours: (15,1), (15,0), (15,15), (0,1), (0,15), (1,1), (1,0), and (1,15). The 16x16 grid is represented by a length 256 vector, where each row of 16 cells is represented by a sub-vector: q[15:0] is row 0, q[31:16] is row 1, etc. 
+// (1) load: Loads data into q at the next clock edge, for loading initial state. Active high synchronous.
+// (2) q: The 16x16 current state of the game, updated every clock cycle.
+// The game state should advance by one timestep every clock cycle.
+IMPORTANT - test scenario:
+{
+  "scenario 1": "At clock cycle 1, 'load' is asserted high with 'data' representing a configuration where one cell is alive and all others are dead. This tests rule 1 of the game, where cells with 0-1 neighbours become dead in the next state.",
+  "scenario 2": "At clock cycle 5, 'load' is asserted high with 'data' representing a grid where a cell has exactly 2 neighbours. This setup will help verify rule 2, ensuring the cell's state does not change because it has exactly 2 neighbours.",
+  "scenario 3": "At clock cycle 10, 'load' is asserted with 'data' representing an initial grid state where a single cell is surrounded by exactly 3 neighbours. This scenario tests the third rule, where a cell with 3 neighbours becomes alive in the next state.",
+  "scenario 4": "At clock cycle 15, 'load' is asserted high with 'data' indicating a situation where a cell has 4 or more neighbours. This configuration is crucial for testing rule 4, ensuring cells with 4 or more neighbours become dead.",
+  "scenario 5": "Initially, at clock cycle 20, 'load' is asserted high with 'data' showing a checkerboard pattern. This pattern tests the toroidal nature of the grid, especially focusing on corner cells and their neighbours wrapping around the grid.",
+  "scenario 6": "At clock cycle 30, 'load' is asserted high with 'data' simulating a stable structure, such as a block or beehive, which should not change over time if isolated. This scenario is important for testing the stability of certain patterns over multiple clock cycles.",
+  "scenario 7": "At clock cycle 40, 'load' is asserted high with 'data' representing an oscillator configuration, such as a 'blinker', to test the dynamic aspect of the game. The focus is on observing the period of oscillation over subsequent clock cycles.",
+  "scenario 8": "At clock cycle 50, 'load' is high with 'data' creating a more complex structure, like a glider, which moves across the grid. This setup will test the DUT's ability to simulate moving patterns correctly, leveraging the toroid's wraparound rules.",
+  "scenario 9": "At clock cycle 60, without asserting 'load', continuously clock the system for several cycles to observe the evolution of an initial state randomly populated with alive and dead cells. This long-term test examines the system's behavior over time without further interaction.",
+  "scenario 10": "At various clock cycles, assert 'load' with 'data' creating edge cases such as a completely dead grid or a fully alive grid. These extremities test the system's handling of minimal and maximal initial conditions."
+}
+
+below is the given testbench codes:
+`timescale 1ns / 1ps
+module testbench;
+reg  clk;
+reg  load;
+reg [255:0] data;
+wire  q;
+
+integer file, scenario;
+// DUT instantiation
+top_module DUT (
+	.clk(clk),
+	.load(load),
+	.data(data),
+	.q(q)
+);
+// Clock generation
+initial begin
+    clk = 0;
+    forever #5 clk = ~clk;
+end
+// Test scenarios:
+// YOUR CODE PART BEGINS
+initial begin
+    file = $fopen("TBout.txt", "w");
+
+    // 
+
+    $fclose(file);
+    $finish;
+end
+// YOUR CODE PART ENDS
+endmodule
+
+The testbench does not need to check the DUT's output but only export the signals of DUT. Please export the signals of DUT to a file named "TBout.txt" at the end of each scenario. The template is given below:
+$fdisplay(file, "[check]scenario: %d, clk = %d, load = %d, data = %d, q = %d", scenario, clk, load, data, q);
+This output will be used to check the correctness of the DUT's output later.
+please use #10 as the delay when you need. If you need longer delay, you can use multiple #10.
+Please determine the input signal's exact values according to given test scenarios. please only complement the last initial code part. your code should begin from the "initial begin..." part to "end". You must use %d when exporting values. Don't use meaningless long delay in your code.

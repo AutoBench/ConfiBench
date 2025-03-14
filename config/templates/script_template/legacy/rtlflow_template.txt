@@ -1,0 +1,84 @@
+stage 1:
+
+[json_mode: True]
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. You are in the first stage. In this stage, please summarize the technical details of the DUT and give me a technical specification of the testbench generation task, so we can use it to design its corresponding testbench.
+3. The core of testbench is the testcases. It usually include two parts logically: the input signals to the DUT and the expected result signals from DUT. The testbench will send the input signals to DUT and check if the result signals are the same as the expected result signals. If they are the same, this means the DUT is passed. Otherwise the DUT fails.
+4. Your technical specification should include these sections:
+- section 1: specification of the DUT, including the module header of the RTL code. If table or other detailed data is provided in the original problem description, DO repeat them in your response. They are very important!!!
+5. your response should be in the form of JSON.
+6. below is the information including the problem description and the DUT header:
+
+[problem description from HDLBits]
+[module header]
+
+your response must be in JSON form. example:
+
+{
+  "important data": "...", # type: string. If no table, state transition or other direct data, leave this with ""
+  "technical specifications": ["...", "...", ...] # each element of the list is one specification string, the starting of the string is its index 
+}
+
+///////////////////////////////
+stage 2:
+
+[json_mode: True]
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. you are in section 2. in this section, please give me the test scenarios. you only need to describe the stimulus in each test scenarios. we will use the stimulus description to generate the test vectors and send them to DUT. you must not tell the expected results even though you know that. 
+3. your information is:
+
+[problem description from HDLBits]
+[module header]
+[response from stage 1][JSON]
+
+your response must be in JSON form. example:
+{
+  "scenario 1": "...", # each content is a string
+  "scenario 2": "...",
+  "scenario 3": "...",
+  ...
+}
+
+///////////////////////////////
+stage 3:
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. our testbench design strategy is to firstly generate the golden RTL module that satisfies the specification. It will later be used to be compared with DUT, if the signals from golden RTL and the DUT are always the same, then the DUT passes our testbench.
+3. you are in section 3, in this section, please generate the ideal/golden RTL circuit. The golden RTL should satisfies the specification.
+4. your information is:
+
+[problem description from HDLBits]
+[module header]
+
+[response from stage 1][JSON]
+
+test scenario: (please note the test vectors below, it will help you determine the input parameters of the rules)
+[response from stage 2][JSON]
+
+please only reply the generated golden RTL. please only reply in verilog codes.
+
+
+///////////////////////////////
+stage 4:
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. you are in section 4. in this section, you will be provided with test scenarios and the golden RTL. you need to use them to generate the final complete testbench. our testbench design strategy is to compare the results from DUT and our golden RTL. If the signals from golden RTL and the DUT are always the same, then the DUT passes our testbench.
+3. There should be a reg "error". It is "0" at the beginning. In each scenario, if test fails, the error should become "1" permanently and testbench should print like "scenario ... failed, got ..., expected ...". At the end of the test, if the "error" is still "0", testbench should print "All test cases passed!". This is very important!
+4. In the scenarios testing part, do not directly write the value of expected value, but compare the signals from DUT with signals from golden RTL
+5. your information is:
+
+[module header]
+
+[response from stage 1][JSON]
+
+IMPORTANT - test scenario:
+[response from stage 2][JSON]
+
+IMPORTANT - golden RTL:
+(you MUST use the codes below in your testbench!!! signals from it should be compared with those from DUT)
+[response from stage 3]
+
+please only generate the verilog codes, no other words. don't forget to print "All test cases passed!" if "error" is 0 at the end!
+
+you need to use test scenario and golden RTL to generate the final complete testbench. our testbench design strategy is to compare the results from DUT and our golden RTL under provided scenarios. If the signals from golden RTL and the DUT are always the same, then the DUT passes our testbench.

@@ -1,0 +1,41 @@
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: "demo_ConfiBench"
+        subdir: demo
+    log: 
+        debug_en: False
+gpt: 
+    model: gpt-4o-2024-08-06
+    rtlgen_model: gpt-4o-2024-08-06
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+        more_info_paths: ['data/HDLBits/HDLBits_data_RTL_4o_20.jsonl']
+        only: ["mux2to1v"]
+    promptscript: pychecker
+    timeout: 40
+    save_compile: False
+    debug: 
+        max: 3
+    itermax: 10
+    update_desc: False
+    TBcheck: 
+        discrim_mode: col_70_wrong_row_25_correct
+confibench:
+    en: True
+    save_fig: True
+    confidence:
+        strategy: ~ # mode: []
+    conf_bool:
+        strategy: e_rank_super # mode: ["e_rank" (default), "e_rank_super", "conf_only"], strategy for how to calculate the boolean confidence from confidence and scenario rank score.
+        e_rank_super:
+            threshold: 0.15 # threshold below which or above 1 minus which the boolean confidence is directly set to 0 or 1. 
+            K: 8 # the stronger, the classification curve is more steep. if you want a linear like curve, choose a very small K such as 0.001
+    multibench: # multibench mode, will use multiple testbench to evaluate the DUT, the scenario mask will be applied in this mode
+        en: True
+        min_tb: 2
+        min_ratio: 0.8

@@ -1,0 +1,14 @@
+stage 1:
+
+Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT".
+
+your testbench template is:
+[testbench template]
+
+[problem description from HDLBits]
+
+DUT header:
+[module header]
+
+very very IMPORTANT: If all the test cases pass, the testbench should display "all test cases passed". If any one of the test cases fails, testbench should not display "all test caess passed". 
+please don't reply other words except the testbench codes.

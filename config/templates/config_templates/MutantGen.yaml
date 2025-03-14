@@ -1,0 +1,16 @@
+# time: 2024/02/15 10:10:26 v2.0
+run:
+    mode: chatgpt
+
+gpt:
+    model: "gpt-4-0125-preview"
+    temperature: 0.8
+    chatgpt:
+        start_form: prompt
+        one_time_talk: True
+
+save:
+    en: True
+    pub:
+        prefix: "temperature08_rule110_gen10"
+        subdir: "mutant_gen_test"

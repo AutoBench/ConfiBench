@@ -1,0 +1,469 @@
+2024-08-01 15:45:16.0 | INFO     | [mux2to1v] - start generating RTLs - NO 1
+2024-08-01 15:48:13.8 | INFO     | [mux2to1v] TBcheck - 50 naive rtls generated
+2024-08-01 15:48:13.8 | INFO     | [mux2to1v] RTLs saved. current cost: 0.0029, total cost: 0.0029
+2024-08-01 15:48:13.8 | INFO     | [m2014_q6b] - start generating RTLs - NO 2
+2024-08-01 15:52:26.9 | INFO     | [m2014_q6b] TBcheck - 50 naive rtls generated
+2024-08-01 15:52:26.9 | INFO     | [m2014_q6b] RTLs saved. current cost: 0.012, total cost: 0.012
+2024-08-01 15:52:26.9 | INFO     | [ringer] - start generating RTLs - NO 3
+2024-08-01 15:53:48.4 | INFO     | [ringer] TBcheck - 50 naive rtls generated
+2024-08-01 15:53:48.4 | INFO     | [ringer] RTLs saved. current cost: 0.0155, total cost: 0.0155
+2024-08-01 15:53:48.4 | INFO     | [alwaysblock1] - start generating RTLs - NO 4
+2024-08-01 15:54:58.2 | INFO     | [alwaysblock1] TBcheck - 50 naive rtls generated
+2024-08-01 15:54:58.2 | INFO     | [alwaysblock1] RTLs saved. current cost: 0.0184, total cost: 0.0184
+2024-08-01 15:54:58.2 | INFO     | [zero] - start generating RTLs - NO 5
+2024-08-01 15:55:43.7 | INFO     | [zero] TBcheck - 50 naive rtls generated
+2024-08-01 15:55:43.7 | INFO     | [zero] RTLs saved. current cost: 0.0201, total cost: 0.0201
+2024-08-01 15:55:43.7 | INFO     | [circuit7] - start generating RTLs - NO 6
+2024-08-01 15:57:55.0 | INFO     | [circuit7] TBcheck - 50 naive rtls generated
+2024-08-01 15:57:55.0 | INFO     | [circuit7] RTLs saved. current cost: 0.0266, total cost: 0.0266
+2024-08-01 15:57:55.0 | INFO     | [ece241_2014_q5a] - start generating RTLs - NO 7
+2024-08-01 16:03:10.4 | INFO     | [ece241_2014_q5a] TBcheck - 50 naive rtls generated
+2024-08-01 16:03:10.4 | INFO     | [ece241_2014_q5a] RTLs saved. current cost: 0.0371, total cost: 0.0371
+2024-08-01 16:03:10.4 | INFO     | [fsm3] - start generating RTLs - NO 8
+2024-08-01 16:08:15.6 | INFO     | [fsm3] TBcheck - 50 naive rtls generated
+2024-08-01 16:08:15.6 | INFO     | [fsm3] RTLs saved. current cost: 0.0471, total cost: 0.0471
+2024-08-01 16:08:15.6 | INFO     | [vector2] - start generating RTLs - NO 9
+2024-08-01 16:09:30.2 | INFO     | [vector2] TBcheck - 50 naive rtls generated
+2024-08-01 16:09:30.2 | INFO     | [vector2] RTLs saved. current cost: 0.05, total cost: 0.05
+2024-08-01 16:09:30.2 | INFO     | [m2014_q4c] - start generating RTLs - NO 10
+2024-08-01 16:10:57.3 | INFO     | [m2014_q4c] TBcheck - 50 naive rtls generated
+2024-08-01 16:10:57.4 | INFO     | [m2014_q4c] RTLs saved. current cost: 0.0533, total cost: 0.0533
+2024-08-01 16:10:57.4 | INFO     | [mt2015_q4a] - start generating RTLs - NO 11
+2024-08-01 16:11:56.4 | INFO     | [mt2015_q4a] TBcheck - 50 naive rtls generated
+2024-08-01 16:11:56.5 | INFO     | [mt2015_q4a] RTLs saved. current cost: 0.0554, total cost: 0.0554
+2024-08-01 16:11:56.5 | INFO     | [shift18] - start generating RTLs - NO 12
+2024-08-01 16:15:19.4 | INFO     | [shift18] TBcheck - 50 naive rtls generated
+2024-08-01 16:15:19.4 | INFO     | [shift18] RTLs saved. current cost: 0.0642, total cost: 0.0642
+2024-08-01 16:15:19.4 | INFO     | [ece241_2013_q8] - start generating RTLs - NO 13
+2024-08-01 16:20:06.1 | INFO     | [ece241_2013_q8] TBcheck - 50 naive rtls generated
+2024-08-01 16:20:06.1 | INFO     | [ece241_2013_q8] RTLs saved. current cost: 0.075, total cost: 0.075
+2024-08-01 16:20:06.1 | INFO     | [m2014_q6] - start generating RTLs - NO 14
+2024-08-01 16:25:51.7 | INFO     | [m2014_q6] TBcheck - 50 naive rtls generated
+2024-08-01 16:25:51.7 | INFO     | [m2014_q6] RTLs saved. current cost: 0.088, total cost: 0.088
+2024-08-01 16:25:51.7 | INFO     | [fsm_ps2data] - start generating RTLs - NO 15
+2024-08-01 16:32:23.7 | INFO     | [fsm_ps2data] TBcheck - 50 naive rtls generated
+2024-08-01 16:32:23.7 | INFO     | [fsm_ps2data] RTLs saved. current cost: 0.1081, total cost: 0.1081
+2024-08-01 16:32:23.7 | INFO     | [2012_q2b] - start generating RTLs - NO 16
+2024-08-01 16:34:43.9 | INFO     | [2012_q2b] TBcheck - 50 naive rtls generated
+2024-08-01 16:34:44.0 | INFO     | [2012_q2b] RTLs saved. current cost: 0.1147, total cost: 0.1147
+2024-08-01 16:34:44.0 | INFO     | [vector0] - start generating RTLs - NO 17
+2024-08-01 16:36:17.1 | INFO     | [vector0] TBcheck - 50 naive rtls generated
+2024-08-01 16:36:17.1 | INFO     | [vector0] RTLs saved. current cost: 0.1186, total cost: 0.1186
+2024-08-01 16:36:17.1 | INFO     | [kmap4] - start generating RTLs - NO 18
+2024-08-01 16:41:21.4 | INFO     | [kmap4] TBcheck - 50 naive rtls generated
+2024-08-01 16:41:21.4 | INFO     | [kmap4] RTLs saved. current cost: 0.1297, total cost: 0.1297
+2024-08-01 16:41:21.4 | INFO     | [vector1] - start generating RTLs - NO 19
+2024-08-01 16:42:39.3 | INFO     | [vector1] TBcheck - 50 naive rtls generated
+2024-08-01 16:42:39.3 | INFO     | [vector1] RTLs saved. current cost: 0.133, total cost: 0.133
+2024-08-01 16:42:39.3 | INFO     | [norgate] - start generating RTLs - NO 20
+2024-08-01 16:43:33.1 | INFO     | [norgate] TBcheck - 50 naive rtls generated
+2024-08-01 16:43:33.1 | INFO     | [norgate] RTLs saved. current cost: 0.135, total cost: 0.135
+2024-08-01 16:43:33.1 | INFO     | [alwaysblock2] - start generating RTLs - NO 21
+2024-08-01 16:45:10.6 | INFO     | [alwaysblock2] TBcheck - 50 naive rtls generated
+2024-08-01 16:45:10.6 | INFO     | [alwaysblock2] RTLs saved. current cost: 0.1394, total cost: 0.1394
+2024-08-01 16:45:10.6 | INFO     | [m2014_q6c] - start generating RTLs - NO 22
+2024-08-01 16:47:15.1 | INFO     | [m2014_q6c] TBcheck - 50 naive rtls generated
+2024-08-01 16:47:15.1 | INFO     | [m2014_q6c] RTLs saved. current cost: 0.1459, total cost: 0.1459
+2024-08-01 16:47:15.1 | INFO     | [mux256to1] - start generating RTLs - NO 23
+2024-08-01 16:48:23.0 | INFO     | [mux256to1] TBcheck - 50 naive rtls generated
+2024-08-01 16:48:23.0 | INFO     | [mux256to1] RTLs saved. current cost: 0.1487, total cost: 0.1487
+2024-08-01 16:48:23.0 | INFO     | [2014_q4a] - start generating RTLs - NO 24
+2024-08-01 16:50:04.8 | INFO     | [2014_q4a] TBcheck - 50 naive rtls generated
+2024-08-01 16:50:04.8 | INFO     | [2014_q4a] RTLs saved. current cost: 0.1529, total cost: 0.1529
+2024-08-01 16:50:04.8 | INFO     | [ece241_2014_q4] - start generating RTLs - NO 25
+2024-08-01 16:52:54.5 | INFO     | [ece241_2014_q4] TBcheck - 50 naive rtls generated
+2024-08-01 16:52:54.5 | INFO     | [ece241_2014_q4] RTLs saved. current cost: 0.16, total cost: 0.16
+2024-08-01 16:52:54.5 | INFO     | [circuit4] - start generating RTLs - NO 26
+2024-08-01 16:54:24.6 | INFO     | [circuit4] TBcheck - 50 naive rtls generated
+2024-08-01 16:54:24.6 | INFO     | [circuit4] RTLs saved. current cost: 0.1665, total cost: 0.1665
+2024-08-01 16:54:24.6 | INFO     | [rule110] - start generating RTLs - NO 27
+2024-08-01 16:58:23.4 | INFO     | [rule110] TBcheck - 50 naive rtls generated
+2024-08-01 16:58:23.4 | INFO     | [rule110] RTLs saved. current cost: 0.177, total cost: 0.177
+2024-08-01 16:58:23.4 | INFO     | [fsm3s] - start generating RTLs - NO 28
+2024-08-01 17:02:24.4 | INFO     | [fsm3s] TBcheck - 50 naive rtls generated
+2024-08-01 17:02:24.4 | INFO     | [fsm3s] RTLs saved. current cost: 0.187, total cost: 0.187
+2024-08-01 17:02:24.4 | INFO     | [circuit5] - start generating RTLs - NO 29
+2024-08-01 17:08:00.5 | INFO     | [circuit5] TBcheck - 50 naive rtls generated
+2024-08-01 17:08:00.6 | INFO     | [circuit5] RTLs saved. current cost: 0.2019, total cost: 0.2019
+2024-08-01 17:08:00.6 | INFO     | [bugs_mux2] - start generating RTLs - NO 30
+2024-08-01 17:09:22.8 | INFO     | [bugs_mux2] TBcheck - 50 naive rtls generated
+2024-08-01 17:09:22.8 | INFO     | [bugs_mux2] RTLs saved. current cost: 0.2056, total cost: 0.2056
+2024-08-01 17:09:22.8 | INFO     | [mt2015_muxdff] - start generating RTLs - NO 31
+2024-08-01 17:11:46.6 | INFO     | [mt2015_muxdff] TBcheck - 50 naive rtls generated
+2024-08-01 17:11:46.6 | INFO     | [mt2015_muxdff] RTLs saved. current cost: 0.2121, total cost: 0.2121
+2024-08-01 17:11:46.6 | INFO     | [edgecapture] - start generating RTLs - NO 32
+2024-08-01 17:14:13.1 | INFO     | [edgecapture] TBcheck - 50 naive rtls generated
+2024-08-01 17:14:13.1 | INFO     | [edgecapture] RTLs saved. current cost: 0.2168, total cost: 0.2168
+2024-08-01 17:14:13.1 | INFO     | [dff8] - start generating RTLs - NO 33
+2024-08-01 17:15:24.2 | INFO     | [dff8] TBcheck - 50 naive rtls generated
+2024-08-01 17:15:24.2 | INFO     | [dff8] RTLs saved. current cost: 0.2196, total cost: 0.2196
+2024-08-01 17:15:24.2 | INFO     | [ece241_2014_q1c] - start generating RTLs - NO 34
+2024-08-01 17:17:36.9 | INFO     | [ece241_2014_q1c] TBcheck - 50 naive rtls generated
+2024-08-01 17:17:37.0 | INFO     | [ece241_2014_q1c] RTLs saved. current cost: 0.2248, total cost: 0.2248
+2024-08-01 17:17:37.0 | INFO     | [review2015_fsmonehot] - start generating RTLs - NO 35
+2024-08-01 17:22:34.8 | INFO     | [review2015_fsmonehot] TBcheck - 50 naive rtls generated
+2024-08-01 17:22:34.8 | INFO     | [review2015_fsmonehot] RTLs saved. current cost: 0.2398, total cost: 0.2398
+2024-08-01 17:22:34.8 | INFO     | [counter_2bc] - start generating RTLs - NO 36
+2024-08-01 17:25:43.2 | INFO     | [counter_2bc] TBcheck - 50 naive rtls generated
+2024-08-01 17:25:43.2 | INFO     | [counter_2bc] RTLs saved. current cost: 0.2464, total cost: 0.2464
+2024-08-01 17:25:43.2 | INFO     | [always_casez] - start generating RTLs - NO 37
+2024-08-01 17:29:19.6 | INFO     | [always_casez] TBcheck - 50 naive rtls generated
+2024-08-01 17:29:19.6 | INFO     | [always_casez] RTLs saved. current cost: 0.2542, total cost: 0.2542
+2024-08-01 17:29:19.6 | INFO     | [always_nolatches] - start generating RTLs - NO 38
+2024-08-01 17:32:07.1 | INFO     | [always_nolatches] TBcheck - 50 naive rtls generated
+2024-08-01 17:32:07.1 | INFO     | [always_nolatches] RTLs saved. current cost: 0.2613, total cost: 0.2613
+2024-08-01 17:32:07.1 | INFO     | [m2014_q4j] - start generating RTLs - NO 39
+2024-08-01 17:36:49.9 | INFO     | [m2014_q4j] TBcheck - 50 naive rtls generated
+2024-08-01 17:36:50.0 | INFO     | [m2014_q4j] RTLs saved. current cost: 0.2709, total cost: 0.2709
+2024-08-01 17:36:50.0 | INFO     | [history_shift] - start generating RTLs - NO 40
+2024-08-01 17:39:42.4 | INFO     | [history_shift] TBcheck - 50 naive rtls generated
+2024-08-01 17:39:42.5 | INFO     | [history_shift] RTLs saved. current cost: 0.279, total cost: 0.279
+2024-08-01 17:39:42.5 | INFO     | [wire_decl] - start generating RTLs - NO 41
+2024-08-01 17:41:17.8 | INFO     | [wire_decl] TBcheck - 50 naive rtls generated
+2024-08-01 17:41:17.8 | INFO     | [wire_decl] RTLs saved. current cost: 0.2839, total cost: 0.2839
+2024-08-01 17:41:17.8 | INFO     | [dff] - start generating RTLs - NO 42
+2024-08-01 17:42:22.7 | INFO     | [dff] TBcheck - 50 naive rtls generated
+2024-08-01 17:42:22.7 | INFO     | [dff] RTLs saved. current cost: 0.2861, total cost: 0.2861
+2024-08-01 17:42:22.7 | INFO     | [ece241_2013_q12] - start generating RTLs - NO 43
+2024-08-01 17:45:44.7 | INFO     | [ece241_2013_q12] TBcheck - 50 naive rtls generated
+2024-08-01 17:45:44.8 | INFO     | [ece241_2013_q12] RTLs saved. current cost: 0.2954, total cost: 0.2954
+2024-08-01 17:45:44.8 | INFO     | [thermostat] - start generating RTLs - NO 44
+2024-08-01 17:47:51.3 | INFO     | [thermostat] TBcheck - 50 naive rtls generated
+2024-08-01 17:47:51.3 | INFO     | [thermostat] RTLs saved. current cost: 0.3017, total cost: 0.3017
+2024-08-01 17:47:51.3 | INFO     | [ece241_2013_q2] - start generating RTLs - NO 45
+2024-08-01 17:50:39.4 | INFO     | [ece241_2013_q2] TBcheck - 50 naive rtls generated
+2024-08-01 17:50:39.5 | INFO     | [ece241_2013_q2] RTLs saved. current cost: 0.3095, total cost: 0.3095
+2024-08-01 17:50:39.5 | INFO     | [lfsr32] - start generating RTLs - NO 46
+2024-08-01 17:52:21.2 | INFO     | [lfsr32] TBcheck - 50 naive rtls generated
+2024-08-01 17:52:21.2 | INFO     | [lfsr32] RTLs saved. current cost: 0.3143, total cost: 0.3143
+2024-08-01 17:52:21.2 | INFO     | [circuit3] - start generating RTLs - NO 47
+2024-08-01 17:53:44.4 | INFO     | [circuit3] TBcheck - 50 naive rtls generated
+2024-08-01 17:53:44.4 | INFO     | [circuit3] RTLs saved. current cost: 0.3208, total cost: 0.3208
+2024-08-01 17:53:44.4 | INFO     | [7420] - start generating RTLs - NO 48
+2024-08-01 17:55:38.6 | INFO     | [7420] TBcheck - 50 naive rtls generated
+2024-08-01 17:55:38.6 | INFO     | [7420] RTLs saved. current cost: 0.3262, total cost: 0.3262
+2024-08-01 17:55:38.6 | INFO     | [popcount255] - start generating RTLs - NO 49
+2024-08-01 17:57:12.3 | INFO     | [popcount255] TBcheck - 50 naive rtls generated
+2024-08-01 17:57:12.3 | INFO     | [popcount255] RTLs saved. current cost: 0.3302, total cost: 0.3302
+2024-08-01 17:57:12.3 | INFO     | [gatesv] - start generating RTLs - NO 50
+2024-08-01 18:00:39.5 | INFO     | [gatesv] TBcheck - 50 naive rtls generated
+2024-08-01 18:00:39.5 | INFO     | [gatesv] RTLs saved. current cost: 0.3403, total cost: 0.3403
+2024-08-01 18:00:39.5 | INFO     | [circuit6] - start generating RTLs - NO 51
+2024-08-01 18:03:31.5 | INFO     | [circuit6] TBcheck - 50 naive rtls generated
+2024-08-01 18:03:31.5 | INFO     | [circuit6] RTLs saved. current cost: 0.3489, total cost: 0.3489
+2024-08-01 18:03:31.5 | INFO     | [countslow] - start generating RTLs - NO 52
+2024-08-01 18:05:25.7 | INFO     | [countslow] TBcheck - 50 naive rtls generated
+2024-08-01 18:05:25.8 | INFO     | [countslow] RTLs saved. current cost: 0.3538, total cost: 0.3538
+2024-08-01 18:05:25.8 | INFO     | [m2014_q4f] - start generating RTLs - NO 53
+2024-08-01 18:06:20.7 | INFO     | [m2014_q4f] TBcheck - 50 naive rtls generated
+2024-08-01 18:06:20.7 | INFO     | [m2014_q4f] RTLs saved. current cost: 0.3563, total cost: 0.3563
+2024-08-01 18:06:20.7 | INFO     | [m2014_q4h] - start generating RTLs - NO 54
+2024-08-01 18:07:22.8 | INFO     | [m2014_q4h] TBcheck - 50 naive rtls generated
+2024-08-01 18:07:22.8 | INFO     | [m2014_q4h] RTLs saved. current cost: 0.3582, total cost: 0.3582
+2024-08-01 18:07:22.8 | INFO     | [fsm1] - start generating RTLs - NO 55
+2024-08-01 18:10:32.8 | INFO     | [fsm1] TBcheck - 50 naive rtls generated
+2024-08-01 18:10:32.8 | INFO     | [fsm1] RTLs saved. current cost: 0.366, total cost: 0.366
+2024-08-01 18:10:32.8 | INFO     | [dualedge] - start generating RTLs - NO 56
+2024-08-01 18:12:10.5 | INFO     | [dualedge] TBcheck - 50 naive rtls generated
+2024-08-01 18:12:10.6 | INFO     | [dualedge] RTLs saved. current cost: 0.37, total cost: 0.37
+2024-08-01 18:12:10.6 | INFO     | [xnorgate] - start generating RTLs - NO 57
+2024-08-01 18:13:02.2 | INFO     | [xnorgate] TBcheck - 50 naive rtls generated
+2024-08-01 18:13:02.2 | INFO     | [xnorgate] RTLs saved. current cost: 0.3721, total cost: 0.3721
+2024-08-01 18:13:02.2 | INFO     | [mt2015_q4] - start generating RTLs - NO 58
+2024-08-01 18:16:58.8 | INFO     | [mt2015_q4] TBcheck - 50 naive rtls generated
+2024-08-01 18:16:58.9 | INFO     | [mt2015_q4] RTLs saved. current cost: 0.3847, total cost: 0.3847
+2024-08-01 18:16:58.9 | INFO     | [rotate100] - start generating RTLs - NO 59
+2024-08-01 18:19:40.5 | INFO     | [rotate100] TBcheck - 50 naive rtls generated
+2024-08-01 18:19:40.6 | INFO     | [rotate100] RTLs saved. current cost: 0.3919, total cost: 0.3919
+2024-08-01 18:19:40.6 | INFO     | [review2015_count1k] - start generating RTLs - NO 60
+2024-08-01 18:21:27.3 | INFO     | [review2015_count1k] TBcheck - 50 naive rtls generated
+2024-08-01 18:21:27.3 | INFO     | [review2015_count1k] RTLs saved. current cost: 0.3961, total cost: 0.3961
+2024-08-01 18:21:27.3 | INFO     | [notgate] - start generating RTLs - NO 61
+2024-08-01 18:22:15.8 | INFO     | [notgate] TBcheck - 50 naive rtls generated
+2024-08-01 18:22:15.8 | INFO     | [notgate] RTLs saved. current cost: 0.3979, total cost: 0.3979
+2024-08-01 18:22:15.8 | INFO     | [fsm_onehot] - start generating RTLs - NO 62
+2024-08-01 18:30:25.7 | INFO     | [fsm_onehot] TBcheck - 50 naive rtls generated
+2024-08-01 18:30:25.8 | INFO     | [fsm_onehot] RTLs saved. current cost: 0.4179, total cost: 0.4179
+2024-08-01 18:30:25.8 | INFO     | [ece241_2013_q7] - start generating RTLs - NO 63
+2024-08-01 18:32:41.6 | INFO     | [ece241_2013_q7] TBcheck - 50 naive rtls generated
+2024-08-01 18:32:41.7 | INFO     | [ece241_2013_q7] RTLs saved. current cost: 0.4232, total cost: 0.4232
+2024-08-01 18:32:41.7 | INFO     | [popcount3] - start generating RTLs - NO 64
+2024-08-01 18:33:50.9 | INFO     | [popcount3] TBcheck - 50 naive rtls generated
+2024-08-01 18:33:50.9 | INFO     | [popcount3] RTLs saved. current cost: 0.426, total cost: 0.426
+2024-08-01 18:33:50.9 | INFO     | [vector5] - start generating RTLs - NO 65
+2024-08-01 18:39:11.4 | INFO     | [vector5] TBcheck - 50 naive rtls generated
+2024-08-01 18:39:11.5 | INFO     | [vector5] RTLs saved. current cost: 0.4379, total cost: 0.4379
+2024-08-01 18:39:11.5 | INFO     | [lemmings1] - start generating RTLs - NO 66
+2024-08-01 18:44:06.0 | INFO     | [lemmings1] TBcheck - 50 naive rtls generated
+2024-08-01 18:44:06.1 | INFO     | [lemmings1] RTLs saved. current cost: 0.4484, total cost: 0.4484
+2024-08-01 18:44:06.1 | INFO     | [circuit1] - start generating RTLs - NO 67
+2024-08-01 18:45:04.5 | INFO     | [circuit1] TBcheck - 50 naive rtls generated
+2024-08-01 18:45:04.5 | INFO     | [circuit1] RTLs saved. current cost: 0.4528, total cost: 0.4528
+2024-08-01 18:45:04.5 | INFO     | [7458] - start generating RTLs - NO 68
+2024-08-01 18:48:59.5 | INFO     | [7458] TBcheck - 50 naive rtls generated
+2024-08-01 18:48:59.6 | INFO     | [7458] RTLs saved. current cost: 0.4624, total cost: 0.4624
+2024-08-01 18:48:59.6 | INFO     | [2014_q3c] - start generating RTLs - NO 69
+2024-08-01 18:53:50.5 | INFO     | [2014_q3c] TBcheck - 50 naive rtls generated
+2024-08-01 18:53:50.6 | INFO     | [2014_q3c] RTLs saved. current cost: 0.4735, total cost: 0.4735
+2024-08-01 18:53:50.6 | INFO     | [m2014_q4e] - start generating RTLs - NO 70
+2024-08-01 18:54:49.4 | INFO     | [m2014_q4e] TBcheck - 50 naive rtls generated
+2024-08-01 18:54:49.4 | INFO     | [m2014_q4e] RTLs saved. current cost: 0.4757, total cost: 0.4757
+2024-08-01 18:54:49.4 | INFO     | [wire4] - start generating RTLs - NO 71
+2024-08-01 18:56:03.1 | INFO     | [wire4] TBcheck - 50 naive rtls generated
+2024-08-01 18:56:03.2 | INFO     | [wire4] RTLs saved. current cost: 0.4788, total cost: 0.4788
+2024-08-01 18:56:03.2 | INFO     | [m2014_q4b] - start generating RTLs - NO 72
+2024-08-01 18:57:23.9 | INFO     | [m2014_q4b] TBcheck - 50 naive rtls generated
+2024-08-01 18:57:23.9 | INFO     | [m2014_q4b] RTLs saved. current cost: 0.482, total cost: 0.482
+2024-08-01 18:57:23.9 | INFO     | [always_case] - start generating RTLs - NO 73
+2024-08-01 19:01:16.3 | INFO     | [always_case] TBcheck - 50 naive rtls generated
+2024-08-01 19:01:16.3 | INFO     | [always_case] RTLs saved. current cost: 0.4893, total cost: 0.4893
+2024-08-01 19:01:16.3 | INFO     | [timer] - start generating RTLs - NO 74
+2024-08-01 19:03:45.5 | INFO     | [timer] TBcheck - 50 naive rtls generated
+2024-08-01 19:03:45.5 | INFO     | [timer] RTLs saved. current cost: 0.496, total cost: 0.496
+2024-08-01 19:03:45.5 | INFO     | [review2015_fsmseq] - start generating RTLs - NO 75
+2024-08-01 19:09:17.6 | INFO     | [review2015_fsmseq] TBcheck - 50 naive rtls generated
+2024-08-01 19:09:17.7 | INFO     | [review2015_fsmseq] RTLs saved. current cost: 0.5072, total cost: 0.5072
+2024-08-01 19:09:17.7 | INFO     | [dff8r] - start generating RTLs - NO 76
+2024-08-01 19:10:53.4 | INFO     | [dff8r] TBcheck - 50 naive rtls generated
+2024-08-01 19:10:53.5 | INFO     | [dff8r] RTLs saved. current cost: 0.5109, total cost: 0.5109
+2024-08-01 19:10:53.5 | INFO     | [edgedetect2] - start generating RTLs - NO 77
+2024-08-01 19:12:29.9 | INFO     | [edgedetect2] TBcheck - 50 naive rtls generated
+2024-08-01 19:12:29.9 | INFO     | [edgedetect2] RTLs saved. current cost: 0.5148, total cost: 0.5148
+2024-08-01 19:12:29.9 | INFO     | [count1to10] - start generating RTLs - NO 78
+2024-08-01 19:14:30.0 | INFO     | [count1to10] TBcheck - 50 naive rtls generated
+2024-08-01 19:14:30.1 | INFO     | [count1to10] RTLs saved. current cost: 0.5194, total cost: 0.5194
+2024-08-01 19:14:30.1 | INFO     | [circuit9] - start generating RTLs - NO 79
+2024-08-01 19:16:56.6 | INFO     | [circuit9] TBcheck - 50 naive rtls generated
+2024-08-01 19:16:56.6 | INFO     | [circuit9] RTLs saved. current cost: 0.5262, total cost: 0.5262
+2024-08-01 19:16:56.6 | INFO     | [lfsr5] - start generating RTLs - NO 80
+2024-08-01 19:19:05.6 | INFO     | [lfsr5] TBcheck - 50 naive rtls generated
+2024-08-01 19:19:05.7 | INFO     | [lfsr5] RTLs saved. current cost: 0.5318, total cost: 0.5318
+2024-08-01 19:19:05.7 | INFO     | [bugs_addsubz] - start generating RTLs - NO 81
+2024-08-01 19:20:52.9 | INFO     | [bugs_addsubz] TBcheck - 50 naive rtls generated
+2024-08-01 19:20:52.9 | INFO     | [bugs_addsubz] RTLs saved. current cost: 0.5371, total cost: 0.5371
+2024-08-01 19:20:52.9 | INFO     | [m2014_q3] - start generating RTLs - NO 82
+2024-08-01 19:26:21.2 | INFO     | [m2014_q3] TBcheck - 50 naive rtls generated
+2024-08-01 19:26:21.2 | INFO     | [m2014_q3] RTLs saved. current cost: 0.5494, total cost: 0.5494
+2024-08-01 19:26:21.2 | INFO     | [bugs_case] - start generating RTLs - NO 83
+2024-08-01 19:31:11.1 | INFO     | [bugs_case] TBcheck - 50 naive rtls generated
+2024-08-01 19:31:11.2 | INFO     | [bugs_case] RTLs saved. current cost: 0.5616, total cost: 0.5616
+2024-08-01 19:31:11.2 | INFO     | [vectorr] - start generating RTLs - NO 84
+2024-08-01 19:32:38.6 | INFO     | [vectorr] TBcheck - 50 naive rtls generated
+2024-08-01 19:32:38.7 | INFO     | [vectorr] RTLs saved. current cost: 0.5648, total cost: 0.5648
+2024-08-01 19:32:38.7 | INFO     | [kmap3] - start generating RTLs - NO 85
+2024-08-01 19:38:03.8 | INFO     | [kmap3] TBcheck - 50 naive rtls generated
+2024-08-01 19:38:03.8 | INFO     | [kmap3] RTLs saved. current cost: 0.5768, total cost: 0.5768
+2024-08-01 19:38:03.8 | INFO     | [review2015_shiftcount] - start generating RTLs - NO 86
+2024-08-01 19:39:55.4 | INFO     | [review2015_shiftcount] TBcheck - 50 naive rtls generated
+2024-08-01 19:39:55.4 | INFO     | [review2015_shiftcount] RTLs saved. current cost: 0.5817, total cost: 0.5817
+2024-08-01 19:39:55.4 | INFO     | [wire] - start generating RTLs - NO 87
+2024-08-01 19:40:41.0 | INFO     | [wire] TBcheck - 50 naive rtls generated
+2024-08-01 19:40:41.0 | INFO     | [wire] RTLs saved. current cost: 0.5836, total cost: 0.5836
+2024-08-01 19:40:41.0 | INFO     | [review2015_fsmshift] - start generating RTLs - NO 88
+2024-08-01 19:43:05.4 | INFO     | [review2015_fsmshift] TBcheck - 50 naive rtls generated
+2024-08-01 19:43:05.5 | INFO     | [review2015_fsmshift] RTLs saved. current cost: 0.5893, total cost: 0.5893
+2024-08-01 19:43:05.5 | INFO     | [count15] - start generating RTLs - NO 89
+2024-08-01 19:44:31.6 | INFO     | [count15] TBcheck - 50 naive rtls generated
+2024-08-01 19:44:31.7 | INFO     | [count15] RTLs saved. current cost: 0.5928, total cost: 0.5928
+2024-08-01 19:44:31.7 | INFO     | [always_if] - start generating RTLs - NO 90
+2024-08-01 19:46:21.8 | INFO     | [always_if] TBcheck - 50 naive rtls generated
+2024-08-01 19:46:21.8 | INFO     | [always_if] RTLs saved. current cost: 0.5976, total cost: 0.5976
+2024-08-01 19:46:21.8 | INFO     | [kmap1] - start generating RTLs - NO 91
+2024-08-01 19:47:35.4 | INFO     | [kmap1] TBcheck - 50 naive rtls generated
+2024-08-01 19:47:35.4 | INFO     | [kmap1] RTLs saved. current cost: 0.6009, total cost: 0.6009
+2024-08-01 19:47:35.4 | INFO     | [2013_q2afsm] - start generating RTLs - NO 92
+2024-08-01 19:54:23.3 | INFO     | [2013_q2afsm] TBcheck - 50 naive rtls generated
+2024-08-01 19:54:23.4 | INFO     | [2013_q2afsm] RTLs saved. current cost: 0.618, total cost: 0.618
+2024-08-01 19:54:23.4 | INFO     | [count10] - start generating RTLs - NO 93
+2024-08-01 19:56:18.0 | INFO     | [count10] TBcheck - 50 naive rtls generated
+2024-08-01 19:56:18.1 | INFO     | [count10] RTLs saved. current cost: 0.6223, total cost: 0.6223
+2024-08-01 19:56:18.1 | INFO     | [fsm_ps2] - start generating RTLs - NO 94
+2024-08-01 20:01:33.9 | INFO     | [fsm_ps2] TBcheck - 50 naive rtls generated
+2024-08-01 20:01:34.0 | INFO     | [fsm_ps2] RTLs saved. current cost: 0.6336, total cost: 0.6336
+2024-08-01 20:01:34.0 | INFO     | [mux2to1] - start generating RTLs - NO 95
+2024-08-01 20:02:28.4 | INFO     | [mux2to1] TBcheck - 50 naive rtls generated
+2024-08-01 20:02:28.5 | INFO     | [mux2to1] RTLs saved. current cost: 0.636, total cost: 0.636
+2024-08-01 20:02:28.5 | INFO     | [gates4] - start generating RTLs - NO 96
+2024-08-01 20:04:21.0 | INFO     | [gates4] TBcheck - 50 naive rtls generated
+2024-08-01 20:04:21.1 | INFO     | [gates4] RTLs saved. current cost: 0.6409, total cost: 0.6409
+2024-08-01 20:04:21.1 | INFO     | [2014_q3bfsm] - start generating RTLs - NO 97
+2024-08-01 20:09:11.4 | INFO     | [2014_q3bfsm] TBcheck - 50 naive rtls generated
+2024-08-01 20:09:11.4 | INFO     | [2014_q3bfsm] RTLs saved. current cost: 0.6526, total cost: 0.6526
+2024-08-01 20:09:11.4 | INFO     | [2013_q2bfsm] - start generating RTLs - NO 98
+2024-08-01 20:16:29.5 | INFO     | [2013_q2bfsm] TBcheck - 50 naive rtls generated
+2024-08-01 20:16:29.6 | INFO     | [2013_q2bfsm] RTLs saved. current cost: 0.6695, total cost: 0.6695
+2024-08-01 20:16:29.6 | INFO     | [dff8p] - start generating RTLs - NO 99
+2024-08-01 20:18:12.8 | INFO     | [dff8p] TBcheck - 50 naive rtls generated
+2024-08-01 20:18:12.9 | INFO     | [dff8p] RTLs saved. current cost: 0.6735, total cost: 0.6735
+2024-08-01 20:18:12.9 | INFO     | [reduction] - start generating RTLs - NO 100
+2024-08-01 20:19:22.7 | INFO     | [reduction] TBcheck - 50 naive rtls generated
+2024-08-01 20:19:22.8 | INFO     | [reduction] RTLs saved. current cost: 0.6764, total cost: 0.6764
+2024-08-01 20:19:22.8 | INFO     | [fsm3comb] - start generating RTLs - NO 101
+2024-08-01 20:23:18.6 | INFO     | [fsm3comb] TBcheck - 50 naive rtls generated
+2024-08-01 20:23:18.7 | INFO     | [fsm3comb] RTLs saved. current cost: 0.6854, total cost: 0.6854
+2024-08-01 20:23:18.7 | INFO     | [mt2015_q4b] - start generating RTLs - NO 102
+2024-08-01 20:26:03.2 | INFO     | [mt2015_q4b] TBcheck - 50 naive rtls generated
+2024-08-01 20:26:03.3 | INFO     | [mt2015_q4b] RTLs saved. current cost: 0.6931, total cost: 0.6931
+2024-08-01 20:26:03.3 | INFO     | [2012_q2fsm] - start generating RTLs - NO 103
+2024-08-01 20:31:06.5 | INFO     | [2012_q2fsm] TBcheck - 50 naive rtls generated
+2024-08-01 20:31:06.6 | INFO     | [2012_q2fsm] RTLs saved. current cost: 0.7057, total cost: 0.7057
+2024-08-01 20:31:06.6 | INFO     | [dff16e] - start generating RTLs - NO 104
+2024-08-01 20:33:43.9 | INFO     | [dff16e] TBcheck - 50 naive rtls generated
+2024-08-01 20:33:43.9 | INFO     | [dff16e] RTLs saved. current cost: 0.712, total cost: 0.712
+2024-08-01 20:33:43.9 | INFO     | [edgedetect] - start generating RTLs - NO 105
+2024-08-01 20:35:16.0 | INFO     | [edgedetect] TBcheck - 50 naive rtls generated
+2024-08-01 20:35:16.1 | INFO     | [edgedetect] RTLs saved. current cost: 0.7159, total cost: 0.7159
+2024-08-01 20:35:16.1 | INFO     | [circuit8] - start generating RTLs - NO 106
+2024-08-01 20:39:16.2 | INFO     | [circuit8] TBcheck - 50 naive rtls generated
+2024-08-01 20:39:16.3 | INFO     | [circuit8] RTLs saved. current cost: 0.7298, total cost: 0.7298
+2024-08-01 20:39:16.3 | INFO     | [rule90] - start generating RTLs - NO 107
+2024-08-01 20:42:08.7 | INFO     | [rule90] TBcheck - 50 naive rtls generated
+2024-08-01 20:42:08.8 | INFO     | [rule90] RTLs saved. current cost: 0.7379, total cost: 0.7379
+2024-08-01 20:42:08.8 | INFO     | [mt2015_eq2] - start generating RTLs - NO 108
+2024-08-01 20:43:20.2 | INFO     | [mt2015_eq2] TBcheck - 50 naive rtls generated
+2024-08-01 20:43:20.3 | INFO     | [mt2015_eq2] RTLs saved. current cost: 0.7409, total cost: 0.7409
+2024-08-01 20:43:20.3 | INFO     | [gatesv100] - start generating RTLs - NO 109
+2024-08-01 20:47:00.7 | INFO     | [gatesv100] TBcheck - 50 naive rtls generated
+2024-08-01 20:47:00.8 | INFO     | [gatesv100] RTLs saved. current cost: 0.7508, total cost: 0.7508
+2024-08-01 20:47:00.8 | INFO     | [m2014_q4a] - start generating RTLs - NO 110
+2024-08-01 20:48:12.8 | INFO     | [m2014_q4a] TBcheck - 50 naive rtls generated
+2024-08-01 20:48:12.8 | INFO     | [m2014_q4a] RTLs saved. current cost: 0.7533, total cost: 0.7533
+2024-08-01 20:48:12.8 | INFO     | [mux256to1v] - start generating RTLs - NO 111
+2024-08-01 20:49:28.7 | INFO     | [mux256to1v] TBcheck - 50 naive rtls generated
+2024-08-01 20:49:28.8 | INFO     | [mux256to1v] RTLs saved. current cost: 0.7566, total cost: 0.7566
+2024-08-01 20:49:28.8 | INFO     | [mux9to1v] - start generating RTLs - NO 112
+2024-08-01 20:53:20.9 | INFO     | [mux9to1v] TBcheck - 50 naive rtls generated
+2024-08-01 20:53:21.0 | INFO     | [mux9to1v] RTLs saved. current cost: 0.7658, total cost: 0.7658
+2024-08-01 20:53:21.0 | INFO     | [vectorgates] - start generating RTLs - NO 113
+2024-08-01 20:55:01.4 | INFO     | [vectorgates] TBcheck - 50 naive rtls generated
+2024-08-01 20:55:01.4 | INFO     | [vectorgates] RTLs saved. current cost: 0.7706, total cost: 0.7706
+2024-08-01 20:55:01.4 | INFO     | [fsm3onehot] - start generating RTLs - NO 114
+2024-08-01 20:58:50.5 | INFO     | [fsm3onehot] TBcheck - 50 naive rtls generated
+2024-08-01 20:58:50.6 | INFO     | [fsm3onehot] RTLs saved. current cost: 0.7804, total cost: 0.7804
+2024-08-01 20:58:50.6 | INFO     | [conditional] - start generating RTLs - NO 115
+2024-08-01 21:00:58.8 | INFO     | [conditional] TBcheck - 50 naive rtls generated
+2024-08-01 21:00:58.9 | INFO     | [conditional] RTLs saved. current cost: 0.7855, total cost: 0.7855
+2024-08-01 21:00:58.9 | INFO     | [gates] - start generating RTLs - NO 116
+2024-08-01 21:03:30.4 | INFO     | [gates] TBcheck - 50 naive rtls generated
+2024-08-01 21:03:30.4 | INFO     | [gates] RTLs saved. current cost: 0.7913, total cost: 0.7913
+2024-08-01 21:03:30.4 | INFO     | [kmap2] - start generating RTLs - NO 117
+2024-08-01 21:05:11.9 | INFO     | [kmap2] TBcheck - 50 naive rtls generated
+2024-08-01 21:05:12.0 | INFO     | [kmap2] RTLs saved. current cost: 0.7958, total cost: 0.7958
+2024-08-01 21:05:12.0 | INFO     | [2014_q3fsm] - start generating RTLs - NO 118
+2024-08-01 21:10:24.9 | INFO     | [2014_q3fsm] TBcheck - 50 naive rtls generated
+2024-08-01 21:10:24.9 | INFO     | [2014_q3fsm] RTLs saved. current cost: 0.8078, total cost: 0.8078
+2024-08-01 21:10:24.9 | INFO     | [vector4] - start generating RTLs - NO 119
+2024-08-01 21:11:24.1 | INFO     | [vector4] TBcheck - 50 naive rtls generated
+2024-08-01 21:11:24.2 | INFO     | [vector4] RTLs saved. current cost: 0.8114, total cost: 0.8114
+2024-08-01 21:11:24.2 | INFO     | [m2014_q4k] - start generating RTLs - NO 120
+2024-08-01 21:13:14.1 | INFO     | [m2014_q4k] TBcheck - 50 naive rtls generated
+2024-08-01 21:13:14.2 | INFO     | [m2014_q4k] RTLs saved. current cost: 0.8156, total cost: 0.8156
+2024-08-01 21:13:14.2 | INFO     | [always_case2] - start generating RTLs - NO 121
+2024-08-01 21:16:26.6 | INFO     | [always_case2] TBcheck - 50 naive rtls generated
+2024-08-01 21:16:26.7 | INFO     | [always_case2] RTLs saved. current cost: 0.8238, total cost: 0.8238
+2024-08-01 21:16:26.7 | INFO     | [fsm2] - start generating RTLs - NO 122
+2024-08-01 21:19:39.4 | INFO     | [fsm2] TBcheck - 50 naive rtls generated
+2024-08-01 21:19:39.5 | INFO     | [fsm2] RTLs saved. current cost: 0.832, total cost: 0.832
+2024-08-01 21:19:39.5 | INFO     | [m2014_q4i] - start generating RTLs - NO 123
+2024-08-01 21:20:23.3 | INFO     | [m2014_q4i] TBcheck - 50 naive rtls generated
+2024-08-01 21:20:23.4 | INFO     | [m2014_q4i] RTLs saved. current cost: 0.8338, total cost: 0.8338
+2024-08-01 21:20:23.4 | INFO     | [step_one] - start generating RTLs - NO 124
+2024-08-01 21:21:08.6 | INFO     | [step_one] TBcheck - 50 naive rtls generated
+2024-08-01 21:21:08.7 | INFO     | [step_one] RTLs saved. current cost: 0.8357, total cost: 0.8357
+2024-08-01 21:21:08.7 | INFO     | [vector100r] - start generating RTLs - NO 125
+2024-08-01 21:27:23.0 | INFO     | [vector100r] TBcheck - 50 naive rtls generated
+2024-08-01 21:27:23.1 | INFO     | [vector100r] RTLs saved. current cost: 0.8496, total cost: 0.8496
+2024-08-01 21:27:23.1 | INFO     | [m2014_q4d] - start generating RTLs - NO 126
+2024-08-01 21:28:35.7 | INFO     | [m2014_q4d] TBcheck - 50 naive rtls generated
+2024-08-01 21:28:35.7 | INFO     | [m2014_q4d] RTLs saved. current cost: 0.853, total cost: 0.853
+2024-08-01 21:28:35.7 | INFO     | [shift4] - start generating RTLs - NO 127
+2024-08-01 21:30:44.3 | INFO     | [shift4] TBcheck - 50 naive rtls generated
+2024-08-01 21:30:44.4 | INFO     | [shift4] RTLs saved. current cost: 0.8587, total cost: 0.8587
+2024-08-01 21:30:44.4 | INFO     | [truthtable1] - start generating RTLs - NO 128
+2024-08-01 21:32:06.1 | INFO     | [truthtable1] TBcheck - 50 naive rtls generated
+2024-08-01 21:32:06.1 | INFO     | [truthtable1] RTLs saved. current cost: 0.8627, total cost: 0.8627
+2024-08-01 21:32:06.1 | INFO     | [dff8ar] - start generating RTLs - NO 129
+2024-08-01 21:33:44.8 | INFO     | [dff8ar] TBcheck - 50 naive rtls generated
+2024-08-01 21:33:44.9 | INFO     | [dff8ar] RTLs saved. current cost: 0.8666, total cost: 0.8666
+2024-08-01 21:33:44.9 | INFO     | [gates100] - start generating RTLs - NO 130
+2024-08-01 21:35:11.8 | INFO     | [gates100] TBcheck - 50 naive rtls generated
+2024-08-01 21:35:11.9 | INFO     | [gates100] RTLs saved. current cost: 0.8704, total cost: 0.8704
+2024-08-01 21:35:11.9 | INFO     | [hadd] - start generating RTLs - NO 131
+2024-08-01 21:36:15.9 | INFO     | [hadd] TBcheck - 50 naive rtls generated
+2024-08-01 21:36:16.0 | INFO     | [hadd] RTLs saved. current cost: 0.8731, total cost: 0.8731
+2024-08-01 21:36:16.0 | INFO     | [always_if2] - start generating RTLs - NO 132
+2024-08-01 21:38:27.6 | INFO     | [always_if2] TBcheck - 50 naive rtls generated
+2024-08-01 21:38:27.7 | INFO     | [always_if2] RTLs saved. current cost: 0.879, total cost: 0.879
+2024-08-01 21:38:27.7 | INFO     | [fsm2s] - start generating RTLs - NO 133
+2024-08-01 21:41:45.0 | INFO     | [fsm2s] TBcheck - 50 naive rtls generated
+2024-08-01 21:41:45.0 | INFO     | [fsm2s] RTLs saved. current cost: 0.887, total cost: 0.887
+2024-08-01 21:41:45.0 | INFO     | [vector3] - start generating RTLs - NO 134
+2024-08-01 21:44:43.9 | INFO     | [vector3] TBcheck - 50 naive rtls generated
+2024-08-01 21:44:44.0 | INFO     | [vector3] RTLs saved. current cost: 0.8955, total cost: 0.8955
+2024-08-01 21:44:44.0 | INFO     | [circuit2] - start generating RTLs - NO 135
+2024-08-01 21:46:56.5 | INFO     | [circuit2] TBcheck - 50 naive rtls generated
+2024-08-01 21:46:56.5 | INFO     | [circuit2] RTLs saved. current cost: 0.9035, total cost: 0.9035
+2024-08-01 21:46:56.5 | INFO     | [andgate] - start generating RTLs - NO 136
+2024-08-01 21:47:44.5 | INFO     | [andgate] TBcheck - 50 naive rtls generated
+2024-08-01 21:47:44.6 | INFO     | [andgate] RTLs saved. current cost: 0.9056, total cost: 0.9056
+2024-08-01 21:47:44.6 | INFO     | [fsm1s] - start generating RTLs - NO 137
+2024-08-01 21:51:00.9 | INFO     | [fsm1s] TBcheck - 50 naive rtls generated
+2024-08-01 21:51:01.0 | INFO     | [fsm1s] RTLs saved. current cost: 0.9131, total cost: 0.9131
+2024-08-01 21:51:01.0 | INFO     | [fadd] - start generating RTLs - NO 138
+2024-08-01 21:52:12.8 | INFO     | [fadd] TBcheck - 50 naive rtls generated
+2024-08-01 21:52:12.8 | INFO     | [fadd] RTLs saved. current cost: 0.9162, total cost: 0.9162
+2024-08-01 21:52:12.8 | INFO     | [m2014_q4g] - start generating RTLs - NO 139
+2024-08-01 21:53:34.3 | INFO     | [m2014_q4g] TBcheck - 50 naive rtls generated
+2024-08-01 21:53:34.3 | INFO     | [m2014_q4g] RTLs saved. current cost: 0.9197, total cost: 0.9197
+2024-08-01 21:53:34.3 | INFO     | [ece241_2014_q3] - start generating RTLs - NO 140
+2024-08-01 21:55:28.0 | INFO     | [ece241_2014_q3] TBcheck - 50 naive rtls generated
+2024-08-01 21:55:28.1 | INFO     | [ece241_2014_q3] RTLs saved. current cost: 0.9261, total cost: 0.9261
+2024-08-01 21:55:28.1 | INFO     | [ece241_2014_q5b] - start generating RTLs - NO 141
+2024-08-01 21:59:04.4 | INFO     | [ece241_2014_q5b] TBcheck - 50 naive rtls generated
+2024-08-01 21:59:04.5 | INFO     | [ece241_2014_q5b] RTLs saved. current cost: 0.9347, total cost: 0.9347
+2024-08-01 21:59:04.5 | INFO     | [circuit10] - start generating RTLs - NO 142
+2024-08-01 22:01:53.6 | INFO     | [circuit10] TBcheck - 50 naive rtls generated
+2024-08-01 22:01:53.7 | INFO     | [circuit10] RTLs saved. current cost: 0.9469, total cost: 0.9469
+2024-08-01 22:01:53.7 | INFO     | [2012_q1g] - start generating RTLs - NO 143
+2024-08-01 22:06:21.5 | INFO     | [2012_q1g] TBcheck - 50 naive rtls generated
+2024-08-01 22:06:21.5 | INFO     | [2012_q1g] RTLs saved. current cost: 0.9573, total cost: 0.9573
+2024-08-01 22:06:21.5 | INFO     | [fsm_hdlc] - start generating RTLs - NO 144
+2024-08-01 22:14:54.5 | INFO     | [fsm_hdlc] TBcheck - 50 naive rtls generated
+2024-08-01 22:14:54.6 | INFO     | [fsm_hdlc] RTLs saved. current cost: 0.9778, total cost: 0.9778
+2024-08-01 22:14:54.6 | INFO     | [review2015_fancytimer] - start generating RTLs - NO 145
+2024-08-01 22:23:41.9 | INFO     | [review2015_fancytimer] TBcheck - 50 naive rtls generated
+2024-08-01 22:23:42.0 | INFO     | [review2015_fancytimer] RTLs saved. current cost: 0.9997, total cost: 0.9997
+2024-08-01 22:23:42.0 | INFO     | [ece241_2013_q4] - start generating RTLs - NO 146
+2024-08-01 22:31:11.9 | INFO     | [ece241_2013_q4] TBcheck - 50 naive rtls generated
+2024-08-01 22:31:12.0 | INFO     | [ece241_2013_q4] RTLs saved. current cost: 1.0194, total cost: 1.0194
+2024-08-01 22:31:12.0 | INFO     | [fsm_serial] - start generating RTLs - NO 147
+2024-08-01 22:37:03.7 | INFO     | [fsm_serial] TBcheck - 50 naive rtls generated
+2024-08-01 22:37:03.7 | INFO     | [fsm_serial] RTLs saved. current cost: 1.034, total cost: 1.034
+2024-08-01 22:37:03.7 | INFO     | [fsm_serialdata] - start generating RTLs - NO 148
+2024-08-01 22:43:07.3 | INFO     | [fsm_serialdata] TBcheck - 50 naive rtls generated
+2024-08-01 22:43:07.4 | INFO     | [fsm_serialdata] RTLs saved. current cost: 1.049, total cost: 1.049
+2024-08-01 22:43:07.4 | INFO     | [gshare] - start generating RTLs - NO 149
+2024-08-01 22:51:14.9 | INFO     | [gshare] TBcheck - 50 naive rtls generated
+2024-08-01 22:51:15.0 | INFO     | [gshare] RTLs saved. current cost: 1.0705, total cost: 1.0705
+2024-08-01 22:51:15.0 | INFO     | [lemmings4] - start generating RTLs - NO 150
+2024-08-01 23:00:37.0 | INFO     | [lemmings4] TBcheck - 50 naive rtls generated
+2024-08-01 23:00:37.1 | INFO     | [lemmings4] RTLs saved. current cost: 1.0955, total cost: 1.0955
+2024-08-01 23:00:37.1 | INFO     | [review2015_fsm] - start generating RTLs - NO 151
+2024-08-01 23:07:06.6 | INFO     | [review2015_fsm] TBcheck - 50 naive rtls generated
+2024-08-01 23:07:06.7 | INFO     | [review2015_fsm] RTLs saved. current cost: 1.1119, total cost: 1.1119
+2024-08-01 23:07:06.7 | INFO     | [conwaylife] - start generating RTLs - NO 152
+2024-08-01 23:12:34.6 | INFO     | [conwaylife] TBcheck - 50 naive rtls generated
+2024-08-01 23:12:34.7 | INFO     | [conwaylife] RTLs saved. current cost: 1.1275, total cost: 1.1275
+2024-08-01 23:12:34.7 | INFO     | [lemmings3] - start generating RTLs - NO 153
+2024-08-01 23:19:05.0 | INFO     | [lemmings3] TBcheck - 50 naive rtls generated
+2024-08-01 23:19:05.1 | INFO     | [lemmings3] RTLs saved. current cost: 1.1477, total cost: 1.1477
+2024-08-01 23:19:05.1 | INFO     | [count_clock] - start generating RTLs - NO 154
+2024-08-01 23:24:15.6 | INFO     | [count_clock] TBcheck - 50 naive rtls generated
+2024-08-01 23:24:15.7 | INFO     | [count_clock] RTLs saved. current cost: 1.161, total cost: 1.161
+2024-08-01 23:24:15.7 | INFO     | [lemmings2] - start generating RTLs - NO 155
+2024-08-01 23:29:41.6 | INFO     | [lemmings2] TBcheck - 50 naive rtls generated
+2024-08-01 23:29:41.7 | INFO     | [lemmings2] RTLs saved. current cost: 1.1768, total cost: 1.1768
+2024-08-01 23:29:41.7 | INFO     | [countbcd] - start generating RTLs - NO 156
+2024-08-01 23:34:11.4 | INFO     | [countbcd] TBcheck - 50 naive rtls generated
+2024-08-01 23:34:11.5 | INFO     | [countbcd] RTLs saved. current cost: 1.1893, total cost: 1.1893
+2024-08-01 23:34:11.5 | INFO     | All RTLs generated and saved to data/HDLBits/HDLBits_data_RTL_4omini_50.jsonl

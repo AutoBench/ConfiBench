@@ -1,0 +1,22 @@
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: "NO"
+        subdir: Baseline
+        dir: 'saves_inEDA/DATE25/'
+    log:
+        debug_en: False
+gpt: 
+    model: gpt-4o-2024-08-06
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+    onlyrun: TBgensimeval
+    promptscript: directgen
+    timeout: 40
+    save_compile: False
+    debug:
+        max: 0

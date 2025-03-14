@@ -1,0 +1,13 @@
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: draw_RSmatrix
+        subdir: discrim
+    log: 
+        debug_en: True
+        level: SUCCESS
+autoline: 
+    TBcheck: 
+        discrim_mode: col_80_wrong

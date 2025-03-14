@@ -1,0 +1,27 @@
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: "NO3"
+        subdir: Main_Results/CorrectBench
+        dir: saves_inEDA/DATE25/
+    log: 
+        debug_en: False
+gpt: 
+    model: gpt-4o-2024-08-06
+    rtlgen_model: gpt-4o-2024-08-06
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+        more_info_paths: ['data/HDLBits/HDLBits_data_RTL_4o_20.jsonl']
+    promptscript: pychecker
+    timeout: 40
+    save_compile: False
+    debug: 
+        max: 3
+    itermax: 10
+    update_desc: False
+    TBcheck: 
+        discrim_mode: col_70_wrong_row_25_correct

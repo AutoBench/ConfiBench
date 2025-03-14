@@ -1,0 +1,23 @@
+run: 
+    mode: autoline
+save: 
+    en: True
+    pub: 
+        prefix: "NO3"
+        subdir: Claude_Sonnet35/AutoBench
+        dir: 'saves_inEDA/DATE25/'
+    log:
+        debug_en: False
+gpt: 
+    model: claude-3-5-sonnet-20240620
+autoline: 
+    probset: 
+        path: data/HDLBits/HDLBits_data.jsonl
+        mutant_path: data/HDLBits/HDLBits_data_mutants.jsonl
+        exclude_json: saves_inEDA/DATE25/Claude_Sonnet35/AutoBench/NO3_20240903_173418/Chatbench_RunInfo.json
+    onlyrun: TBgensimeval
+    promptscript: pychecker
+    timeout: 40
+    save_compile: False
+    debug:
+        max: 3

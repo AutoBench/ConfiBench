@@ -1,0 +1,93 @@
+stage 1:
+
+[json_mode: True]
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. You are in the first stage. In this stage, please summarize the technical details of the DUT and give me a technical specification of the testbench generation task, so we can use it to design its corresponding testbench.
+3. The core of testbench is the testcases. It usually include two parts logically: the input signals to the DUT and the expected result signals from DUT. The testbench will send the input signals to DUT and check if the result signals are the same as the expected result signals. If they are the same, this means the DUT is passed. Otherwise the DUT fails.
+4. Your technical specification should include these sections:
+- section 1: specification of the DUT, including the module header of the RTL code. If table or other detailed data is provided in the original problem description, DO repeat them in your response. They are very important!!!
+5. your response should be in the form of JSON.
+6. below is the information including the problem description and the DUT header:
+
+[problem description from HDLBits]
+[module header]
+
+your response must be in JSON form. example:
+
+{
+  "important data": "...", # type: string. If no table, state transition or other direct data, leave this with ""
+  "technical specifications": ["...", "...", ...] # each element of the list is one specification string, the starting of the string is its index 
+}
+
+///////////////////////////////
+stage 2:
+
+[json_mode: True]
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. you are in section 2. in this section, please give me the test scenarios. you only need to describe the stimulus in each test scenarios. If time is important, please inform the clock cycle information. we will use the stimulus description to generate the test vectors and send them to DUT. you must not tell the expected results even though you know that. 
+3. your information is:
+
+[problem description from HDLBits]
+[module header]
+[response from stage 1][JSON]
+
+your response must be in JSON form. example:
+{
+  "scenario 1": "...", # each content is a string
+  "scenario 2": "...",
+  "scenario 3": "...",
+  ...
+}
+
+[$$check scenarios$$]
+
+##///////////////////////////////
+##stage 3:
+
+##1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+##2. you are in section 3. in this section, please give me the rules of an ideal DUT. you should give these rules in python. Later we will use these ideal rules to generate expected values in each test scenario. currently you must only generate the rules. the input of these rules should be related to the test vectors from test scenario. the rule should give the expected values under test vectors. 
+##3. your information is:
+
+##[problem description from HDLBits]
+##[module header]
+
+##[response from stage 1][JSON]
+
+##test scenario: (please note the test vectors below, it will help you determine the input parameters of the rules)
+##[response from stage 2][JSON]
+
+##your response should only contain python code. 
+
+///////////////////////////////
+stage 4:
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is 
+- 1.1. the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". 
+- 1.2. the module header.
+- 1.3. the technical specification of testbench
+- 1.4. test scenarios which determines value and sequential information of test vectors
+
+2. you are in section 4. in this section, our target is to generate the verilog testbench for the DUT. This testbench can export the input and output signals of DUT at the important time points. The exported data will be send to a python script to check the correctness of DUT. 
+ATTENTION: The testbench does not need to check the DUT's output but only export the signals of DUT.
+Instruction of saving signals to file: 
+(1) you should use $fopen and $fdisplay to export the important signals in testbench. the file name is "TBout.txt". 
+(2) When running testbench, for one time point, you should export 1 line. the example of the printed line is "scenario: 1, clk = 1, signal_1 = 1, signal_2 = 3, ..."
+(3) the signals you save is the input and output of DUT, you should determine the signals according to DUT's header:
+[module header]
+
+3. your other information is:
+
+[problem description from HDLBits]
+
+[response from stage 1][JSON]
+
+IMPORTANT - test scenario:
+[response from stage 2][JSON]
+
+ The testbench does not need to check the DUT's output but only export the signals of DUT.
+Instruction of saving signals to file: 
+(1) you should use $fopen and $fdisplay to export the important signals in testbench. the file name is "TBout.txt". 
+(2) When running testbench, for one time point, you should export 1 line. the example of the printed line is "scenario: 1, clk = 1, signal_1 = 1, signal_2 = 3, ..."
+(3) the signals you save is the input and output of DUT, you should determine the signals according to DUT's header.
+please only generate the verilog codes, no other words.

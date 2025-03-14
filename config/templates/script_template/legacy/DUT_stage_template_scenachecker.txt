@@ -1,0 +1,153 @@
+stage 1:
+
+[json_mode: True]
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. You are in the first stage. In this stage, please summarize the technical details of the DUT and give me a technical specification of the testbench generation task, so we can use it to design its corresponding testbench.
+3. The core of testbench is the testcases. It usually include two parts logically: the input signals to the DUT and the expected result signals from DUT. The testbench will send the input signals to DUT and check if the result signals are the same as the expected result signals. If they are the same, this means the DUT is passed. Otherwise the DUT fails.
+4. Your technical specification should include these sections:
+- section 1: specification of the DUT, including the module header of the RTL code. If table or other detailed data is provided in the original problem description, DO repeat them in your response. They are very important!!!
+5. your response should be in the form of JSON.
+6. below is the information including the problem description and the DUT header:
+
+[problem description from HDLBits]
+[module header]
+
+your response must be in JSON form. example:
+
+{
+  "important data": "...", # type: string. If no table, state transition or other direct data, leave this with ""
+  "technical specifications": ["...", "...", ...] # each element of the list is one specification string, the starting of the string is its index 
+}
+
+///////////////////////////////
+stage 2:
+
+[json_mode: True]
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our final target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. you are in section 2. in this section, please give me the test scenarios. you only need to describe the stimulus in each test scenarios. If time is important, please inform the clock cycle information. we will use the stimulus description to generate the test vectors and send them to DUT. you must not tell the expected results even though you know that. 
+3. each test scenario should include:
+- 3.1 the motivation of this test scenario in the natural language description.
+- 3.2 how to set the input signals of DUT (or we call this as test stimuli)
+- 3.3 If clk is included, please note the time of this test scenario
+- 3.4 above information should be in the form of one string.
+4. Your test scenario should not include any information about the expected outputs.
+5. your information is:
+
+[problem description from HDLBits]
+[module header]
+[response from stage 1][JSON]
+
+again: each test scenario should include:
+- 1. the motivation of this test scenario in the natural language description.
+- 2. how to set the input signals of DUT (or we call this as test stimuli)
+- 3. If clk is included, please note the time of this test scenario
+- 4. above information should be in the form of one string.
+
+your response must be in JSON form. example:
+{
+  "scenario 1": "...", # each content is a string. This string contains all information, including motivation, test stimuli and time (if clk signal is included)
+  "scenario 2": "...",
+  "scenario 3": "...",
+  ...
+}
+
+[$$check scenarios$$]
+
+///////////////////////////////
+stage 2b:
+
+[json_mode: True]
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our final target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. you are in section 2b. in this section, you will be provided with test scenarios. Your task is to determin the Strategy we use in each scenario. Each scenario has two options to test. Option 1 is comparing DUT's output with the golden module's output. Error may happen because the golden module we use is not perfect. Option 2 is directly checking some property of the output or the value if the scenario is a simple one. If the scenario is simple or the expected is easy to derive, you should use Option 2. If the scenario or the task is complicated, you should choose Option 2
+3. Important!!! For each scenario, if you choose Option 1, your answer to this scenario should be "GOLDEN DUT"; if you choose Option 2, you should describe the testbench reaction to this scenario. your answer to each scenario should be a string.
+3. your information is:
+
+[problem description from HDLBits]
+[module header]
+[response from stage 1][JSON]
+
+test scenarios: (Very important!!!)
+[response from stage 2][JSON]
+
+instruction again:
+Each scenario has two options to test. Option 1 is comparing DUT's output with the golden module's output. Error may happen because the golden module we use is not perfect. Option 2 is directly checking some property of the output or the value if the scenario is a simple one. If the scenario is simple or the expected is easy to derive, you should use Option 2. If the scenario or the task is complicated, you should choose Option 2
+Important!!! For each scenario, if you choose Option 1, your answer to this scenario should be "GOLDEN DUT"; if you choose Option 2, you should describe the testbench reaction to this scenario. your answer to each scenario should be a string.
+
+your response must be in JSON form. example:
+{
+  "scenario 1": "...", # your answer to this scenario; (If choose Option 1 then it is "GOLDEN DUT")
+  "scenario 2": "...",
+  "scenario 3": "...",
+  ...
+}
+
+///////////////////////////////
+stage 3:
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. you are in section 3. in this section, please give me the rules of an ideal DUT. you should give these rules in python. Later we will use these ideal rules to generate expected values in each test scenario. currently you must only generate the rules. the input of these rules should be related to the test vectors from test scenario. the rule should give the expected values under test vectors. 
+3. your information is:
+
+[problem description from HDLBits]
+[module header]
+
+[response from stage 1][JSON]
+
+test scenario: (please note the test vectors below, it will help you determine the input parameters of the rules)
+[response from stage 2][JSON]
+
+your response should only contain python code. 
+
+///////////////////////////////
+stage 3b:
+
+1. background: Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements of the problem description.
+2. Task: you are in section 3. in this section, please give me the golden RTL code that fullfill the description. This golden RTL code should have the same input and output ports as module header. The name of the module is "golden_DUT". The module will be the reference module in the final testbench. The final testbench will compare the golden RTL's output signals with DUT's output signals. If the same in all cases, the test passes. Your current task is to generate the golden RTL module.
+3. Prior Knowledge: We already have the core rules expressed in python. You can use this infomation to help you design your golden RTL. You can use high level syntax and unsynthesizable syntax. Your golden module name is "golden_DUT" and ports are the same as DUT's ports.
+4. your information is:
+
+[problem description from HDLBits]
+[module header]
+
+[response from stage 1][JSON]
+
+IMPORTANT:
+[response from stage 3]
+
+please generate the golden module code. please only generate the verilog codes, no other words.
+
+///////////////////////////////
+stage 4:
+
+1. Your task is to write a verilog testbench for an verilog RTL module code (we call it as "DUT", device under test). The infomation we have is 
+- 1.1. the problem description that guides student to write the RTL code (DUT) and the header of the "DUT". 
+- 1.2. the module header.
+- 1.3. the technical specification of testbench
+- 1.4. test scenarios which determines value and sequential information of test vectors
+- 1.5. test strategies for scenarios
+- 1.6. the golden RTL codes in verilog. In testbench you should compare the signals from golden RTL and DUT. If not the same, then this DUT fails in the test.
+Our target is to generate the verilog testbench for the DUT. This testbench can check if the DUT in verilog satisfies all technical requirements from the problem description.
+2. you are in section 4. in this section, you will be provided with test scenarios, strategies and golden DUT. please highly based on these information to generate the testbench.
+3. There should be a reg "error". It is "0" at the beginning. In each scenario, if test fails, the error should become "1" permanently and testbench should print like "scenario ... failed, got ..., expected ...". At the end of the test, if the "error" is still "0", testbench should print "All test cases passed!". This is very important!
+4. our testbench is based on test scenario. you should use the strategy in the "Scenario Testing Strategies". If the strategy is "GOLDEN DUT", that means you compare the DUT's output with golden DUT module's output, and if not match you set "error" to "1"; If the strategy is other words, directly check some property of the output or the value according to the strategy. 
+
+5. your information is:
+
+[problem description from HDLBits]
+[module header]
+
+[response from stage 1][JSON]
+
+IMPORTANT - test scenario:
+[response from stage 2][JSON]
+IMPORTANT - the "Scenario Testing Strategies" is :
+[response from stage 2b]
+
+IMPORTANT - golden RTL: (please instantiate it in your testbench. Your code should not contain the full code of golden RTL)
+[response from stage 3b]
+
+please only generate the verilog codes, no other words. don't forget to print "All test cases passed!" if "error" is 0 at the end!
+
+[$$TB_code stage 3b$$]

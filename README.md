@@ -131,7 +131,7 @@ For other configuration items, please see [default.yaml](config/default.yaml). I
 
 ## License
 
-To do in the future
+In this work we use MIT license so everybody can freely use our code without any restriction!
 
 ## Reference
 

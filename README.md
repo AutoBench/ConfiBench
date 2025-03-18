@@ -2,8 +2,7 @@
 
 This is the code implementation of paper ***ConfiBench: Automatic Testbench Generation with Confidence-Based Scenario Mask and Testbench Ensemble using LLMs for HDL Design***, which has been submitted to ***ACM Transactions on Design Automation of Electronic Systems (MLCAD special issue)***. This is the next generation of [CorrectBench](https://github.com/AutoBench/CorrectBench). This is also the third generation of [AutoBench](https://github.com/AutoBench/AutoBench).
 
-This open-sourced project contains the `code implementation` of *ConfiBench*, the `dataset` (see json files in [`data/HDLBits`](data/HDLBits), the dataset is extended from HDLBits data) and the `experimental results` (TODO).
-<!-- (see the following google drive link) referred in paper Section IV Experimental results. Due to the large size, the experimental results are uploaded to [google drive](https://drive.google.com/drive/folders/1ldVzdAKC4HQb10ez0aUasNevWnTP5RRc?usp=sharing). -->
+This open-sourced project contains the `code implementation` of *ConfiBench*, the `dataset` (see json files in [`data/HDLBits`](data/HDLBits), the dataset is extended from HDLBits data) and the `experimental results` (see the following google drive link) referred in paper Section 5 Experimental results. Due to the large size, the experimental results are uploaded to [google drive](https://drive.google.com/drive/folders/1dtI5Jbm67H2l-OvVIYcY7kuU11bP-2f1?usp=sharing).
 
 <img src="figs/ConfiBench_Workflow.svg" width="100%">
 

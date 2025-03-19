@@ -2,7 +2,7 @@
 Description :   The main function of autoline, originally the first part of autoline.py in AutoBench 1.0
 Author      :   Ruidi Qiu (r.qiu@tum.de)
 Time        :   2024/7/24 11:44:15
-LastEdited  :   2025/3/14 23:53:04
+LastEdited  :   2025/3/19 10:45:42
 """
 import os
 import analyze as al
@@ -512,9 +512,14 @@ class AutoLine_Task():
                     "TB_code_py": self.TB_code_py
                 })
                 if self.TBcheck is not None:
-                    self.save_data.update({
-                        "RSmatrix": self.RSmatrix.tolist()
-                    })
+                    if self.RSmatrix is not None:
+                        self.save_data.update({
+                            "RSmatrix": self.RSmatrix.tolist()
+                        })
+                    else:
+                        self.save_data.update({
+                            "RSmatrix": "N/A"
+                        })
                 if self.confidence_en:
                     self.save_data.update({
                         "confidence": self.confidence,
@@ -522,7 +527,10 @@ class AutoLine_Task():
                     })
             else:
                 for info in self.multibench_info:
-                    info["RSmatrix"] = info["RSmatrix"].tolist()
+                    if "RSmatrix" in info.keys() and info["RSmatrix"] is not None:
+                        info["RSmatrix"] = info["RSmatrix"].tolist()
+                    else:
+                        info["RSmatrix"] = "N/A"
                 self.save_data.update({
                     "multibench_info": self.multibench_info
                 })

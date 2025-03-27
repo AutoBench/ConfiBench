@@ -34,17 +34,17 @@ This open-sourced project contains the `code implementation` of *ConfiBench*, th
 
 see [requirements.txt](requirements.txt):
 
-anthropic==0.49.0
-loguru==0.7.3
-matplotlib==3.10.1
-numpy==2.2.3
-openai==1.66.3
-pandas==2.2.3
-PyYAML==6.0.2
-Requests==2.32.3
-scipy==1.15.2
-sympy==1.13.3
-tiktoken==0.9.0
+- anthropic==0.49.0
+- loguru==0.7.3
+- matplotlib==3.10.1
+- numpy==2.2.3
+- openai==1.66.3
+- pandas==2.2.3
+- PyYAML==6.0.2
+- Requests==2.32.3
+- scipy==1.15.2
+- sympy==1.13.3
+- tiktoken==0.9.0
 
 
 ### LLM API keys
